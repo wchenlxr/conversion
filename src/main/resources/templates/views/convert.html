@@ -1,0 +1,57 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>转换</title>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/bootstrap/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/demo.css"/>
+    <script type="text/javascript" src="/easyui/jquery.min.js"/>
+    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"/>
+    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"/>
+    <script type="text/javascript" src="/js/convert.js"/>
+</head>
+<body>
+<div class="easyui-layout" data-options="fit:true">
+    <div region="north" split="true" border="false" style="overflow: hidden; height: 44px; background: #7f99be repeat-x center 50%;
+        line-height: 40px;color: #fff; font-family: Verdana, 微软雅黑,黑体">
+        <span style="padding-left:10px; font-size: 20px; ">厂商字典对照</span>
+    </div>
+    <div data-options="region:'west',split:'true',title:''" style="width: 25%;">
+        <div>
+            <input class="easyui-searchbox" data-options="prompt:'字典类别搜索',menu:'#zd',searcher:doSearch"
+                   style="width:100%"/>
+            <div id="zd">
+                <div data-options="name:'1'">编码</div>
+                <div data-options="name:'2'">名称</div>
+            </div>
+        </div>
+        <table id="ptfltype"></table>
+    </div>
+    <div data-options="region:'center'" style="width:75%;height:100%;">
+        <div>
+            <input id="sc" class="easyui-searchbox" data-options="prompt:'对照搜索',menu:'#mm',searcher:mmDoSearch"
+                   style="width:40%;"/>
+            <div id="mm">
+                <div data-options="name:'1'">厂商值</div>
+                <div data-options="name:'2'">平台</div>
+            </div>
+            <span style="padding-left:10px; ">匹配程度：</span>
+            <input type="radio" name="ppFlag" value="1" checked="checked" onchange="ppFlagChange()">完全</input>
+            <input type="radio" name="ppFlag" value="0" onchange="ppFlagChange()">非完全</input>
+        </div>
+        <div class="easyui-panel" style="width:100%;height:100%;padding:10px;">
+            <div class="easyui-layout" data-options="fit:true">
+                <div data-options="region:'west',split:true" style="width:60%;padding:10px">
+                    <table id="cszydz"></table>
+                </div>
+                <div data-options="region:'center'" style="width:40%;padding:10px">
+                    <table id="ptzy">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

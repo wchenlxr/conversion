@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.adtech.cn.mapper.ContrastMapper">
+    <!--按业务厂商编码、平台分类编码或厂商值域编码删除匹配临时表数据 -->
+    <delete id="deleteByCode" parameterType="map">
+        delete from CONTRAST
+        where COMPANY_CODE = #{companyCode}
+        AND PLATFORM_RANGE_CODE
+        =#{platformRangeCode}
+        <if test="companyRangeCode != null">
+            AND COMPANY_RANGE_CODE = #{companyRangeCode}
+        </if>
+    </delete>
+    <!-- 新增数据 -->
+    <insert id="insertSelective" parameterType="com.adtech.cn.domain.Contrast">
+        insert into CONTRAST
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                ID,
+            </if>
+            <if test="companyCode != null">
+                COMPANY_CODE,
+            </if>
+            <if test="platformRangeCode != null">
+                PLATFORM_RANGE_CODE,
+            </if>
+            <if test="companyRangeCode != null">
+                COMPANY_RANGE_CODE,
+            </if>
+            <if test="platformDetailName != null">
+                PLATFORM_DETAIL_NAME,
+            </if>
+            <if test="platformDetailCode != null">
+                PLATFORM_DETAIL_CODE,
+            </if>
+            <if test="score != null">
+                SCORE,
+            </if>
+            <if test="selected != null">
+                SELECTED,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="companyCode != null">
+                #{companyCode},
+            </if>
+            <if test="platformRangeCode != null">
+                #{platformRangeCode},
+            </if>
+            <if test="companyRangeCode != null">
+                #{companyRangeCode},
+            </if>
+            <if test="platformDetailName != null">
+                #{platformDetailName},
+            </if>
+            <if test="platformDetailCode != null">
+                #{platformDetailCode},
+            </if>
+            <if test="score != null">
+                #{score},
+            </if>
+            <if test="selected != null">
+                #{selected},
+            </if>
+        </trim>
+    </insert>
+    <!-- 查询转码匹配总数据 -->
+    <select id="countNum" resultType="int" parameterType="map">
+		SELECT count(1) FROM CONTRAST WHERE COMPANY_RANGE_CODE= #{companyRangeCode}
+		AND PLATFORM_RANGE_CODE = #{platformRangeCode}
+		AND COMPANY_CODE = #{companyCode}
+	</select>
+    <!-- 查询转码匹配分页数据 -->
+    <select id="findContrast" resultType="com.adtech.cn.domain.Contrast" parameterType="map">
+		SELECT
+		a.ID, a.COMPANY_CODE, a.PLATFORM_RANGE_CODE, a.COMPANY_RANGE_CODE, a.PLATFORM_DETAIL_CODE, a.SCORE, a.SELECTED, b.DETAIL_NAME as "platformDetailName"
+		FROM (SELECT ROWNUM AS rowno, t.*
+		FROM CONTRAST t
+		WHERE COMPANY_RANGE_CODE= #{companyRangeCode}
+		AND PLATFORM_RANGE_CODE = #{platformRangeCode}
+		AND COMPANY_CODE = #{companyCode}
+		AND ROWNUM &lt;= #{page}*#{rows}) a
+		JOIN PLATFORM_RANGE_DETAIL b on b.DETAIL_CODE=a.PLATFORM_DETAIL_CODE AND b.platform_code=a.platform_range_code
+		WHERE a.rowno &gt; (#{page}-1)*#{rows}
+	</select>
+    <!-- 修改转码匹配选中状态 -->
+    <update id="updateSelected" parameterType="com.adtech.cn.domain.Contrast">
+        update CONTRAST
+        <set>
+            <if test="selected != null">
+                SELECTED = #{selected},
+            </if>
+        </set>
+        where ID = #{id}
+    </update>
+    <update id="updateOthers" parameterType="map">
+		update CONTRAST set SELECTED =0 where COMPANY_CODE =#{companyCode}
+		and  PLATFORM_RANGE_CODE=#{platformRangeCode} and COMPANY_RANGE_CODE=#{companyRangeCode}
+	</update>
+</mapper>

@@ -1,0 +1,967 @@
+2018-03-21 09:58:29,306 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6764 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 09:58:29,306 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 09:58:29,306 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 09:58:36,724 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.342 seconds (JVM running for 10.151)
+2018-03-21 10:00:23,077 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4780 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:00:23,077 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:00:23,077 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:00:28,942 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.411 seconds (JVM running for 7.257)
+2018-03-21 10:01:18,831 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:01:18,940 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:01:19,003 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:05:38,907 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:05:38,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 20(Integer), 1(Integer), 20(Integer)
+2018-03-21 10:05:38,907 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 10:05:41,044 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:05:41,044 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:05:41,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:08:48,862 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:08:48,862 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 20(Integer), 1(Integer), 20(Integer)
+2018-03-21 10:08:48,878 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 10:08:50,844 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:08:50,844 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:08:50,859 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:11:34,950 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:11:34,950 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:11:34,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:15:52,721 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:15:52,721 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:15:52,721 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:21:23,048 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5020 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:21:23,048 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:21:23,048 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:21:29,054 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.567 seconds (JVM running for 7.36)
+2018-03-21 10:21:36,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:21:36,620 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:21:36,667 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:21:36,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:21:36,683 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:21:36,714 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:22:17,014 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6100 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:22:17,014 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:22:17,014 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:22:23,551 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.098 seconds (JVM running for 8.836)
+2018-03-21 10:22:30,602 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:22:30,696 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:22:30,742 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:22:30,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:22:30,742 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:22:30,774 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:23:19,815 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1880 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:23:19,815 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:23:19,815 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:23:27,150 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.881 seconds (JVM running for 8.847)
+2018-03-21 10:23:38,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:38,964 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:39,011 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:39,011 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:39,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:23:39,026 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:23:40,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:40,821 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:40,821 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:40,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:40,821 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:23:40,837 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-03-21 10:23:43,941 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:43,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:43,941 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:43,941 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:43,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:23:43,957 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:23:54,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-03-21 10:23:55,953 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:55,953 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:55,953 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:55,969 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:55,969 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:23:55,969 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:23:59,261 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:23:59,276 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:23:59,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:23:59,276 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:23:59,276 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:23:59,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:24:00,431 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:24:06,483 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-03-21 10:24:24,194 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:24:24,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:24:24,194 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:24:24,194 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno >= (?-1)*? 
+2018-03-21 10:24:24,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:24:24,210 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:24:44,883 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4568 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:24:44,883 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:24:44,883 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:24:51,186 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.88 seconds (JVM running for 7.948)
+2018-03-21 10:24:58,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:24:58,760 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:24:58,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:24:58,807 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:24:58,807 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:24:58,822 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:25:00,336 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:25:00,336 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:25:00,336 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:00,336 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:25:00,336 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:25:00,351 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:25:01,662 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:25:07,574 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:25:07,574 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:25:07,574 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:07,574 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:25:07,574 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 10:25:07,590 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:09,056 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:25:09,072 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:25:09,072 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:25:09,072 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:25:09,072 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:25:09,072 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:30:55,935 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6204 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:30:55,951 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:30:55,951 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:31:02,331 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.957 seconds (JVM running for 7.732)
+2018-03-21 10:31:09,960 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:31:10,069 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:31:10,116 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:31:10,116 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:31:10,116 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:31:10,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:34:57,901 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7132 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:34:57,901 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:34:57,901 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:35:03,768 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.386 seconds (JVM running for 7.205)
+2018-03-21 10:35:18,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:35:19,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:35:19,134 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:35:19,134 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:35:19,134 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:35:19,165 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:35:31,324 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7076 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:35:31,324 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:35:31,324 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:35:38,645 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.166 seconds (JVM running for 9.162)
+2018-03-21 10:35:52,546 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:35:52,639 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:35:52,671 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:35:52,671 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:35:52,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:35:52,702 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:37:23,488 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6976 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:37:23,488 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:37:23,488 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:37:30,240 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.61 seconds (JVM running for 8.566)
+2018-03-21 10:38:20,880 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6808 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:38:20,896 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:38:20,896 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:38:39,569 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1380 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:38:39,585 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:38:39,585 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:38:46,402 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.441 seconds (JVM running for 8.407)
+2018-03-21 10:40:55,660 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6616 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:40:55,660 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:40:55,660 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:41:02,758 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.691 seconds (JVM running for 8.678)
+2018-03-21 10:46:34,785 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4452 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:46:34,790 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:46:34,790 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:46:41,770 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.73 seconds (JVM running for 8.656)
+2018-03-21 10:48:05,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:48:05,522 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:48:05,569 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:48:05,569 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:48:05,569 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:48:05,615 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:48:08,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:49:58,685 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4252 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:49:58,700 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:49:58,700 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:50:06,141 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.112 seconds (JVM running for 9.135)
+2018-03-21 10:50:29,278 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:50:29,419 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:50:29,465 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:50:29,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:50:29,465 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:50:29,497 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:51:38,747 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6376 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:51:38,747 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:51:38,763 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:51:46,095 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.987 seconds (JVM running for 8.962)
+2018-03-21 10:51:53,841 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:51:53,950 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:51:54,012 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:51:54,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:51:54,012 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:51:54,043 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:53:46,981 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5768 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:53:46,981 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:53:46,981 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:53:52,784 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.365 seconds (JVM running for 7.158)
+2018-03-21 10:53:59,478 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:53:59,603 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:53:59,650 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:53:59,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:53:59,650 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:53:59,681 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:54:22,690 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3068 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:54:22,690 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:54:22,690 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:54:28,353 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.24 seconds (JVM running for 7.159)
+2018-03-21 10:54:40,400 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 10:54:40,540 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 10:54:40,572 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 10:54:40,572 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 10:54:40,572 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 10:54:40,603 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 10:55:16,842 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5340 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 10:55:16,842 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 10:55:16,842 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 10:55:23,737 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.581 seconds (JVM running for 8.729)
+2018-03-21 11:06:21,287 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5884 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:06:21,292 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:06:21,292 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:06:29,181 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.581 seconds (JVM running for 9.459)
+2018-03-21 11:10:09,099 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6780 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:10:09,104 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:10:09,105 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:10:16,823 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.335 seconds (JVM running for 9.235)
+2018-03-21 11:10:25,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:10:25,910 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:10:25,957 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:10:25,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:10:25,957 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:10:25,989 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:11:28,885 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6056 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:11:28,885 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:11:28,885 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:11:36,014 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.784 seconds (JVM running for 8.673)
+2018-03-21 11:11:41,100 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:11:41,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:11:41,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:11:41,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:11:41,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:11:41,271 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:13:10,526 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5716 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:13:10,557 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:13:10,557 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:13:17,077 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.238 seconds (JVM running for 8.246)
+2018-03-21 11:13:33,775 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6864 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:13:33,790 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:13:33,790 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:13:40,405 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.254 seconds (JVM running for 8.129)
+2018-03-21 11:13:46,785 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:13:46,894 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:13:46,941 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:13:46,941 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:13:46,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:13:46,972 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:14:33,201 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4476 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:14:33,217 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:14:33,217 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:14:40,655 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.125 seconds (JVM running for 9.049)
+2018-03-21 11:14:58,522 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:14:58,624 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:14:58,698 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:14:58,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:14:58,703 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:14:58,730 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:15:53,214 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6404 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:15:53,230 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:15:53,230 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:15:59,860 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.285 seconds (JVM running for 8.237)
+2018-03-21 11:16:09,672 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:16:09,766 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:16:09,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:16:09,797 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:16:09,797 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:16:09,828 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:17:16,510 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5344 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:17:16,510 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:17:16,510 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:17:24,107 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.252 seconds (JVM running for 9.211)
+2018-03-21 11:17:33,748 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:17:33,920 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:17:33,951 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:17:33,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:17:33,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:17:33,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:18:35,980 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6236 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:18:35,980 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:18:35,980 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:18:42,907 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.738 seconds (JVM running for 8.805)
+2018-03-21 11:19:02,594 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:19:02,750 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:19:02,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:19:02,797 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:19:02,812 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:19:02,828 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:23:00,636 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6004 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:23:00,636 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:23:00,636 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:23:07,578 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.597 seconds (JVM running for 8.71)
+2018-03-21 11:23:32,244 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:23:32,338 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:23:32,384 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:23:32,384 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:23:32,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:23:32,416 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:24:19,115 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7032 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:24:19,115 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:24:19,115 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:24:26,565 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.105 seconds (JVM running for 9.015)
+2018-03-21 11:24:48,233 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:24:48,373 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:24:48,436 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:24:48,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:24:48,436 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:24:48,467 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:26:39,786 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6408 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:26:39,802 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:26:39,802 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:26:46,463 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.317 seconds (JVM running for 8.199)
+2018-03-21 11:27:09,569 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:27:09,693 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:27:09,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:27:09,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:27:09,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:27:09,787 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:30:12,110 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4464 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:30:12,110 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:30:12,110 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:30:19,739 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.393 seconds (JVM running for 9.62)
+2018-03-21 11:30:30,990 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:30:31,130 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:30:31,193 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:30:31,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:30:31,193 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:30:31,208 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:31:38,486 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5608 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:31:38,486 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:31:38,486 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:31:45,516 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.62 seconds (JVM running for 8.578)
+2018-03-21 11:38:12,352 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2636 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:38:12,367 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:38:12,367 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:38:18,670 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.036 seconds (JVM running for 7.835)
+2018-03-21 11:38:39,403 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:38:39,559 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:38:39,590 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:38:39,606 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:38:39,606 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:38:39,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:40:28,433 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5148 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:40:28,449 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:40:28,449 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:40:34,330 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.49 seconds (JVM running for 7.356)
+2018-03-21 11:41:24,137 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:41:24,268 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:41:24,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:41:24,312 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:41:24,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:41:24,341 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:41:54,614 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3508 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:41:54,619 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:41:54,620 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:42:00,379 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.395 seconds (JVM running for 7.195)
+2018-03-21 11:42:12,357 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:42:12,473 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:42:12,505 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:42:12,505 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:42:12,505 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:42:12,536 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:42:41,545 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 932 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:42:41,550 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:42:41,550 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:42:47,840 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.417 seconds (JVM running for 8.413)
+2018-03-21 11:43:06,788 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:43:06,912 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:43:06,943 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:43:06,959 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:43:06,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:43:06,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:44:11,769 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2520 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:44:11,781 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:44:11,782 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:44:18,166 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.381 seconds (JVM running for 9.084)
+2018-03-21 11:44:26,998 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:44:27,107 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:44:27,154 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:44:27,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:44:27,154 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:44:27,170 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:47:06,912 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4832 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:47:06,912 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:47:06,912 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:47:12,435 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.24 seconds (JVM running for 7.054)
+2018-03-21 11:47:18,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:47:18,966 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:47:18,997 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:47:18,997 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:47:18,997 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:47:19,028 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:48:21,610 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 984 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:48:21,610 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:48:21,610 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:48:28,505 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.551 seconds (JVM running for 8.469)
+2018-03-21 11:48:35,729 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:48:35,822 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:48:35,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:48:35,869 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:48:35,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:48:35,900 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:51:32,607 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 804 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:51:32,607 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:51:32,607 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:51:39,003 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.974 seconds (JVM running for 7.875)
+2018-03-21 11:51:47,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:51:47,271 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:51:47,302 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:51:47,317 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:51:47,317 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:51:47,333 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:54:38,476 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6192 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:54:38,493 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:54:38,494 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:54:44,458 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.486 seconds (JVM running for 7.244)
+2018-03-21 11:55:10,390 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:55:10,526 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:55:10,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:55:10,557 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:55:10,573 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:55:10,601 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:56:14,318 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5064 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:56:14,323 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:56:14,323 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:56:21,230 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.591 seconds (JVM running for 8.544)
+2018-03-21 11:56:31,800 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:56:31,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:56:31,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:56:31,960 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:56:31,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:56:31,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:57:30,593 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:57:30,594 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:57:30,597 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:57:30,598 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:57:30,600 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:57:30,612 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 11:58:01,910 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4088 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 11:58:01,914 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 11:58:01,914 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 11:58:07,465 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.356 seconds (JVM running for 7.374)
+2018-03-21 11:58:23,405 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 11:58:23,546 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 11:58:23,593 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 11:58:23,596 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 11:58:23,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 11:58:23,630 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:02:42,127 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6612 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:02:42,131 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:02:42,132 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:02:48,180 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.603 seconds (JVM running for 7.613)
+2018-03-21 12:23:09,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:23:09,450 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:23:09,481 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:23:09,481 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:23:09,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:23:09,512 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:23:49,074 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5472 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:23:49,090 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:23:49,090 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:23:54,987 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.474 seconds (JVM running for 7.26)
+2018-03-21 12:24:03,772 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:24:03,912 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:24:03,943 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:24:03,943 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:24:03,943 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:24:03,974 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:24:35,721 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:24:35,721 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:24:35,736 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:24:35,736 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:24:35,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:24:35,752 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:26:01,048 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5304 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:26:01,048 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:26:01,048 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:26:07,038 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.598 seconds (JVM running for 7.521)
+2018-03-21 12:26:16,260 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:26:16,400 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:26:16,432 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:26:16,447 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:26:16,447 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:26:16,463 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:33:34,024 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5792 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:33:34,040 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:33:34,040 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:33:42,924 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7044 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:33:42,924 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:33:42,924 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:33:49,180 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.849 seconds (JVM running for 7.695)
+2018-03-21 12:35:34,596 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6100 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:35:34,596 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:35:34,596 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:35:40,977 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.989 seconds (JVM running for 7.9)
+2018-03-21 12:39:15,552 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 352 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:39:15,567 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:39:15,567 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:39:21,090 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.084 seconds (JVM running for 6.937)
+2018-03-21 12:39:33,523 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:39:33,648 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:39:33,679 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:39:33,695 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:39:33,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:39:33,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:39:59,992 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6864 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:39:59,992 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:39:59,992 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:40:05,998 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.521 seconds (JVM running for 7.313)
+2018-03-21 12:49:15,324 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5192 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:49:15,340 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:49:15,340 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:49:22,440 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.74 seconds (JVM running for 8.879)
+2018-03-21 12:49:34,440 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:49:34,565 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:49:34,612 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:49:34,612 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:49:34,612 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:49:34,643 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:51:06,546 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4928 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:51:06,546 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:51:06,562 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:51:13,068 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.146 seconds (JVM running for 7.994)
+2018-03-21 12:51:19,230 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:51:19,339 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:51:19,386 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:51:19,386 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:51:19,386 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:51:19,402 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:52:12,879 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4552 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:52:12,879 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:52:12,879 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:52:19,245 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.958 seconds (JVM running for 7.722)
+2018-03-21 12:52:26,327 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:52:26,468 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:52:26,515 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:52:26,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:52:26,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:52:26,546 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:57:01,256 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3808 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 12:57:01,256 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 12:57:01,256 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 12:57:07,059 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.365 seconds (JVM running for 7.162)
+2018-03-21 12:57:19,635 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:57:19,776 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:57:19,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:19,823 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:57:19,823 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:57:19,838 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:57:36,265 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:57:36,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:57:36,265 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:36,265 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:57:36,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:57:36,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 12:57:37,357 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:38,433 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:57:38,433 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:57:38,433 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:38,433 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:57:38,433 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:57:38,449 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 12:57:48,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 12:57:48,716 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 12:57:48,716 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 12:57:48,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 12:57:48,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 12:57:48,731 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:00:11,665 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2220 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:00:11,665 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:00:11,665 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:00:18,239 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.152 seconds (JVM running for 7.968)
+2018-03-21 13:00:26,401 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:00:26,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:00:26,589 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:00:26,589 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:00:26,589 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:00:26,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:01:01,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:01:01,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:01:01,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:01:01,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:01:01,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:01:01,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:03:40,998 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:03:41,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:03:41,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:03:41,014 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:03:41,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:03:41,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:07:56,098 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3104 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:07:56,098 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:07:56,098 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:08:02,276 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.755 seconds (JVM running for 7.596)
+2018-03-21 13:08:12,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:08:12,822 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:08:12,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:08:12,869 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:08:12,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:08:12,900 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:10:24,917 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3692 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:10:24,917 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:10:24,917 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:10:31,110 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.739 seconds (JVM running for 7.558)
+2018-03-21 13:11:02,729 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5888 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:11:02,745 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:11:02,745 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:11:09,312 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.269 seconds (JVM running for 8.19)
+2018-03-21 13:11:16,520 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:11:16,660 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:11:16,707 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:11:16,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:11:16,707 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:11:16,738 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:34:08,742 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5976 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:34:08,758 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:34:08,758 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:34:14,982 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.786 seconds (JVM running for 7.571)
+2018-03-21 13:34:20,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:34:21,019 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:34:21,066 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:34:21,066 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:34:21,082 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:34:21,097 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:35:37,463 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:35:37,479 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:35:37,479 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:35:37,479 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:35:37,479 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:35:37,495 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:37:12,914 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6180 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:37:12,914 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:37:12,914 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:37:19,528 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.176 seconds (JVM running for 8.279)
+2018-03-21 13:37:27,078 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:37:27,219 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:37:27,266 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:37:27,266 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:37:27,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:37:27,297 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:42:09,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:42:09,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:42:09,330 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:42:09,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:42:09,330 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:42:09,346 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:43:36,280 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5404 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:43:36,280 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:43:36,280 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:43:42,913 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.226 seconds (JVM running for 8.208)
+2018-03-21 13:44:07,873 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4456 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:44:07,873 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:44:07,888 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:44:14,192 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.928 seconds (JVM running for 7.744)
+2018-03-21 13:44:38,151 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:44:38,291 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:44:38,332 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:44:38,335 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:44:38,337 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:44:38,363 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:46:30,057 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2576 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:46:30,057 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:46:30,057 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:46:36,453 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.958 seconds (JVM running for 7.779)
+2018-03-21 13:47:35,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:47:35,716 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:47:35,767 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:47:35,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:47:35,772 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:47:35,796 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:47:46,761 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:47:46,762 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:47:46,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:47:46,764 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:47:46,765 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 13:47:46,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:47:48,088 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:47:48,088 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:47:48,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:47:48,091 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:47:48,093 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:47:48,098 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 13:49:34,624 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4108 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-21 13:49:34,628 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 13:49:34,629 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 13:49:41,997 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.92 seconds (JVM running for 8.762)
+2018-03-21 13:50:06,335 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 13:50:06,505 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 13:50:06,558 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 13:50:06,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 13:50:06,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 13:50:06,598 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 14:08:54,032 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 14:08:54,033 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 14:08:54,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:54,035 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 14:08:54,036 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 14:08:54,051 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:55,932 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 14:08:55,933 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 14:08:55,935 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:55,936 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 14:08:55,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 2(Integer), 10(Integer), 2(Integer), 10(Integer)
+2018-03-21 14:08:55,940 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:57,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 14:08:57,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 14:08:57,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:57,588 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 14:08:57,589 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 14:08:57,596 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 14:08:58,561 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 14:08:58,561 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 14:08:58,562 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:58,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 14:08:58,564 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 14:08:58,574 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 14:08:59,110 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 14:08:59,111 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 14:08:59,113 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 14:08:59,114 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 14:08:59,116 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 14:08:59,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 14:37:10,141 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6524 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 14:37:10,145 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 14:37:10,146 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 14:37:18,862 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.381 seconds (JVM running for 10.247)
+2018-03-21 15:01:35,511 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3948 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:01:35,511 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:01:35,526 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:01:41,783 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.849 seconds (JVM running for 7.767)
+2018-03-21 15:17:59,001 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7124 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:17:59,017 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:17:59,017 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:18:05,548 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.062 seconds (JVM running for 7.877)
+2018-03-21 15:19:45,518 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7792 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:19:45,518 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:19:45,518 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:19:52,259 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.849 seconds (JVM running for 9.361)
+2018-03-21 15:32:51,819 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2016 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:32:51,834 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:32:51,834 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:32:57,695 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.454 seconds (JVM running for 7.27)
+2018-03-21 15:34:40,807 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7332 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:34:40,822 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:34:40,822 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:34:47,178 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.98 seconds (JVM running for 7.836)
+2018-03-21 15:55:32,994 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7596 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:55:33,010 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:55:33,010 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:55:41,830 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.507 seconds (JVM running for 10.465)
+2018-03-21 15:56:04,404 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6988 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 15:56:04,419 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 15:56:04,419 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 15:56:12,613 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.958 seconds (JVM running for 9.907)
+2018-03-21 16:22:51,934 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6080 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:22:51,934 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:22:51,934 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:23:25,628 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5648 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:23:25,628 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:23:25,628 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:23:32,352 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.426 seconds (JVM running for 8.339)
+2018-03-21 16:23:52,648 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:23:52,804 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:23:52,882 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:25:19,564 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8048 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:25:19,564 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:25:19,564 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:25:25,507 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.505 seconds (JVM running for 7.271)
+2018-03-21 16:25:29,985 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:25:30,094 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:25:30,172 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:25:58,976 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4716 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:25:58,976 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:25:58,976 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:26:06,498 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.288 seconds (JVM running for 9.216)
+2018-03-21 16:26:13,765 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:26:13,890 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:26:13,953 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:27:36,204 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:27:36,204 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:27:36,220 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:29:19,781 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6544 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:29:19,796 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:29:19,796 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:29:26,560 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.874 seconds (JVM running for 8.807)
+2018-03-21 16:29:33,693 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:29:34,379 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:29:34,660 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:31:10,190 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7820 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:31:10,205 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:31:10,205 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:31:17,166 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.694 seconds (JVM running for 8.673)
+2018-03-21 16:31:44,639 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:31:44,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:31:44,857 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:33:54,145 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4400 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:33:54,145 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:33:54,145 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:34:01,486 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.121 seconds (JVM running for 9.115)
+2018-03-21 16:34:05,745 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:34:05,948 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:34:06,042 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:35:37,042 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6292 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:35:37,042 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:35:37,042 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:35:43,878 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.663 seconds (JVM running for 8.678)
+2018-03-21 16:35:48,386 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:35:48,511 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:35:48,573 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:37:43,539 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4408 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:37:43,539 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:37:43,539 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:37:49,610 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.664 seconds (JVM running for 7.426)
+2018-03-21 16:37:53,697 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:37:53,838 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:37:53,900 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:38:21,872 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5844 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:38:21,872 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:38:21,872 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:38:27,554 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.244 seconds (JVM running for 7.04)
+2018-03-21 16:38:32,158 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:38:32,283 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:38:32,330 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:43:06,516 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7652 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:43:06,532 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:43:06,532 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:43:12,570 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.631 seconds (JVM running for 7.459)
+2018-03-21 16:44:14,573 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2444 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:44:14,573 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:44:14,573 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:44:21,164 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.199 seconds (JVM running for 8.104)
+2018-03-21 16:50:53,717 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2408 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:50:53,732 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:50:53,732 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:50:59,939 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.816 seconds (JVM running for 7.749)
+2018-03-21 16:51:16,821 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(1) from COMPANY 
+2018-03-21 16:51:16,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-03-21 16:51:17,024 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-03-21 16:51:17,039 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:51:17,039 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 10(Integer), 1(Integer), 10(Integer)
+2018-03-21 16:51:17,086 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-03-21 16:52:39,533 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5688 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:52:39,533 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:52:39,533 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:52:45,658 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.749 seconds (JVM running for 7.626)
+2018-03-21 16:53:48,710 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3980 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:53:48,710 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:53:48,710 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:53:54,921 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.795 seconds (JVM running for 7.57)
+2018-03-21 16:55:05,685 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5176 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:55:05,685 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:55:05,685 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:55:12,192 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.1 seconds (JVM running for 7.979)
+2018-03-21 16:55:18,698 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:55:18,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:55:18,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:55:39,927 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6188 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:55:39,927 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:55:39,927 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:55:46,417 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.068 seconds (JVM running for 7.86)
+2018-03-21 16:59:01,253 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5316 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 16:59:01,253 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 16:59:01,253 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 16:59:07,280 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.62 seconds (JVM running for 7.47)
+2018-03-21 16:59:14,427 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:59:14,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:59:14,614 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:59:38,557 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:59:38,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:59:38,573 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:59:40,182 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:59:40,183 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:59:40,191 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 16:59:44,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 16:59:44,321 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 16:59:44,326 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:00:24,653 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8028 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 17:00:24,668 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 17:00:24,668 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 17:00:30,616 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.54 seconds (JVM running for 7.379)
+2018-03-21 17:00:35,459 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:00:35,615 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:00:35,678 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:01:06,407 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4252 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 17:01:06,423 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 17:01:06,423 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 17:01:12,462 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.663 seconds (JVM running for 7.484)
+2018-03-21 17:01:16,849 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:01:16,990 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:01:17,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:01:21,363 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:01:21,363 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:01:21,378 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:01:39,511 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3796 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 17:01:39,511 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 17:01:39,511 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 17:01:45,838 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.857 seconds (JVM running for 7.665)
+2018-03-21 17:01:49,904 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:01:50,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:01:50,075 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:02:19,827 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:02:19,827 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:02:19,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:03:01,968 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2928 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 17:03:01,973 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 17:03:01,973 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 17:03:08,584 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.298 seconds (JVM running for 8.25)
+2018-03-21 17:03:14,448 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:03:14,573 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:03:14,635 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:03:59,361 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:03:59,361 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:03:59,377 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:04:30,777 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6104 (E:\conversion\target\classes started by Administrator in E:\conversion)
+2018-03-21 17:04:30,777 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-21 17:04:30,777 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-21 17:04:38,367 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.232 seconds (JVM running for 9.123)
+2018-03-21 17:04:43,608 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:04:43,750 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:04:43,812 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:04:52,793 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:04:52,793 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:04:52,809 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2018-03-21 17:05:02,771 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT a.company_code, a.company_name, a.create_time, a.update_time, a.status, a.remark FROM (SELECT ROWNUM AS rowno, t.* FROM COMPANY t WHERE ROWNUM <= ?*?) a WHERE a.rowno > (?-1)*? 
+2018-03-21 17:05:02,771 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer), 5000(Integer), 1(Integer), 5000(Integer)
+2018-03-21 17:05:02,786 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11

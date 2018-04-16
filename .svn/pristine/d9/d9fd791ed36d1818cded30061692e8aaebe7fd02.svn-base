@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.adtech.cn.mapper.RangeDetailMapper">
+	<sql id="Base_Column_List">
+		ID, PLATFORM_CODE, DETAIL_CODE, DETAIL_NAME, INDEX_STATUS
+	</sql>
+	<!-- 根据主键ID删除数据 -->
+	<delete id="deleteByPrimaryKey" parameterType="long">
+		delete from PLATFORM_RANGE_DETAIL
+		where ID = #{id}
+	</delete>
+	<!--按平台分类编码删除值域表数据 -->
+	<delete id="deleteByCode" parameterType="string">
+		delete from PLATFORM_RANGE_DETAIL
+		where PLATFORM_CODE = #{platformCode}
+	</delete>
+	<!-- 新增数据 -->
+	<insert id="insertSelective" parameterType="com.adtech.cn.domain.RangeDetail">
+		insert into PLATFORM_RANGE_DETAIL
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				ID,
+			</if>
+			<if test="platformCode != null">
+				PLATFORM_CODE,
+			</if>
+			<if test="detailCode != null">
+				DETAIL_CODE,
+			</if>
+			<if test="detailName != null">
+				DETAIL_NAME,
+			</if>
+			<if test="indexStatus != null">
+				INDEX_STATUS,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id},
+			</if>
+			<if test="platformCode != null">
+				#{platformCode},
+			</if>
+			<if test="detailCode != null">
+				#{detailCode},
+			</if>
+			<if test="detailName != null">
+				#{detailName},
+			</if>
+			<if test="indexStatus != null">
+				#{indexStatus},
+			</if>
+		</trim>
+	</insert>
+	<!-- 修改数据 -->
+	<update id="updateByPrimaryKeySelective" parameterType="com.adtech.cn.domain.RangeDetail">
+		update PLATFORM_RANGE_DETAIL
+		<set>
+			<if test="platformCode != null">
+				PLATFORM_CODE = #{platformCode},
+			</if>
+			<if test="detailCode != null">
+				DETAIL_CODE = #{detailCode},
+			</if>
+			<if test="detailName != null">
+				DETAIL_NAME = #{detailName},
+			</if>
+			<if test="indexStatus != null">
+				INDEX_STATUS = #{indexStatus},
+			</if>
+		</set>
+		where ID = #{id}
+	</update>
+	<!-- 查询分类明细总数据 -->
+	<select id="countNum" resultType="int" parameterType="string">
+		SELECT count(1) FROM PLATFORM_RANGE_DETAIL WHERE PLATFORM_CODE=
+		#{platformCode}
+	</select>
+	<!-- 查询分类明细分页数据 -->
+	<select id="findDetail" resultType="com.adtech.cn.domain.RangeDetail">
+		SELECT
+		a.ID, a.PLATFORM_CODE, a.DETAIL_CODE, a.DETAIL_NAME, a.INDEX_STATUS, b.PLATFORM_NAME
+		FROM (SELECT ROWNUM AS rowno, t.*
+		FROM PLATFORM_RANGE_DETAIL t
+		WHERE PLATFORM_CODE= #{platformCode}
+		AND ROWNUM &lt;= #{page}*#{rows}) a
+		JOIN PLATFORM_RANGE_CLASS b on b.PLATFORM_CODE=a.PLATFORM_CODE
+		WHERE a.rowno &gt; (#{page}-1)*#{rows}
+	</select>
+	<!-- 查询所有明细数据 -->
+	<select id="findAllDetail" resultType="com.adtech.cn.domain.RangeDetail" parameterType="map">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM PLATFORM_RANGE_DETAIL  
+		WHERE 1=1
+		<if test="platformCode != null">
+		AND PLATFORM_CODE = #{platformCode}
+		</if>
+		<if test="indexStatus != null">
+		AND INDEX_STATUS = #{indexStatus}
+		</if>
+		ORDER BY PLATFORM_CODE,DETAIL_CODE
+	</select>
+	<!-- 根据分类编码和分类值域编码查询数据 -->
+	<select id="selectByCode" resultType="com.adtech.cn.domain.RangeDetail"
+		parameterType="map">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM PLATFORM_RANGE_DETAIL
+		WHERE PLATFORM_CODE = #{platformCode} AND DETAIL_CODE = #{detailCode}
+	</select>
+</mapper>

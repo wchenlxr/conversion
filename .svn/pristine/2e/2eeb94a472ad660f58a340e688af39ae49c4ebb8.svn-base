@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adtech.cn.mapper.CompanyMapper">
+    <!--查询业务厂商-->
+    <select id="findCompany" resultType="com.adtech.cn.domain.Company">
+        SELECT
+        a.company_code,
+        a.company_name,
+        a.create_time,
+        a.update_time,
+        a.status,
+        a.remark
+        FROM (SELECT ROWNUM AS rowno, t.*
+        FROM COMPANY t
+        WHERE ROWNUM &lt;= #{page}*#{rows}) a
+        WHERE a.rowno &gt; (#{page}-1)*#{rows}
+    </select>
+    <!--统计业务厂商数量-->
+    <select id="countNum" resultType="int">
+        SELECT count(1) from COMPANY
+    </select>
+    <!--增加业务厂商-->
+    <insert id="insertOne" parameterType="map">
+        <trim prefix="INSERT into COMPANY(" suffix=")" suffixOverrides=",">
+            <if test="companyCode != null and companyCode != ''">company_code,</if>
+            <if test="companyName != null and companyName != ''">company_name,</if>
+            <if test="createTime != null and createTime != ''">create_time,</if>
+            <if test="updateTime != null and updateTime != ''">update_time,</if>
+            <if test="status != null and status != ''">status,</if>
+            <if test="remark != null and remark != ''">remark,</if>
+        </trim>
+        <trim prefix="VALUES(" suffix=")" suffixOverrides=",">
+            <if test="companyCode != null and companyCode != ''">#{companyCode},</if>
+            <if test="companyName != null and companyName != ''">#{companyName},</if>
+            <if test="createTime != null and createTime != ''">to_date(#{createTime,jdbcType=VARCHAR},'yyyy-MM-dd
+                hh24:mi:ss'),
+            </if>
+            <if test="updateTime != null and updateTime != ''">to_date(#{updateTime,jdbcType=VARCHAR},'yyyy-MM-dd
+                hh24:mi:ss'),
+            </if>
+            <if test="status != null and status != ''">#{status},</if>
+            <if test="remark != null and remark != ''">#{remark},</if>
+        </trim>
+    </insert>
+    <!--更新业务厂商-->
+    <update id="updateOne" parameterType="map">
+        <trim prefix="update COMPANY set" suffixOverrides=",">
+            company_name = #{companyName},
+            create_time = to_date(#{createTime,jdbcType=VARCHAR},'yyyy-MM-dd
+            hh24:mi:ss'),
+            update_time = to_date(#{updateTime,jdbcType=VARCHAR},'yyyy-MM-dd
+            hh24:mi:ss'),
+            status = #{status},
+            remark = #{remark},
+        </trim>
+        WHERE company_code =#{companyCode}
+    </update>
+    <!--批量增加业务厂商-->
+    <insert id="insertList" parameterType="map">
+        <trim prefix="INSERT into COMPANY(" suffix=")" suffixOverrides=",">
+            COMPANY_CODE,
+            COMPANY_NAME,
+            CREATE_TIME,
+            UPDATE_TIME,
+            STATUS,
+            REMARK,
+        </trim>
+        <trim prefix="select" suffixOverrides=",">
+            a.company_code,
+            a.company_name,
+            a.create_time,
+            a.update_time,
+            a.status,
+            a.remark,
+        </trim>
+        <foreach collection="list" item="item" index="index" separator="UNION ALL" open=" FROM(" close=")a">
+            SELECT
+            #{item.companyCode,jdbcType=NUMERIC}as company_code,
+            #{item.companyName,jdbcType=VARCHAR}as company_name,
+            to_date(#{item.createTime,jdbcType=VARCHAR},'yyyy-MM-dd hh24:mi:ss')as create_time,
+            to_date(#{item.updateTime,jdbcType=VARCHAR},'yyyy-MM-dd hh24:mi:ss')as update_time,
+            #{item.status,jdbcType=NUMERIC}as status,
+            #{item.remark,jdbcType=VARCHAR}as remark
+            FROM dual
+        </foreach>
+    </insert>
+    <!--按业务厂商编码删除-->
+    <delete id="deleteOne" parameterType="long">
+        delete from COMPANY a where a.COMPANY_CODE =#{companyCode}
+    </delete>
+    <!--按业务厂商名称查询-->
+    <select id="selectByName" parameterType="string" resultType="com.adtech.cn.domain.Company">
+        SELECT
+        company_code,
+        company_name,
+        create_time,
+        update_time,
+        status,
+        remark
+        FROM COMPANY WHERE COMPANY_NAME=#{companyName}
+    </select>
+    <!-- 根据厂商编码查询数据 -->
+    <select id="findByCompanyCode" resultType="com.adtech.cn.domain.Company" parameterType="long">
+        select COMPANY_CODE, COMPANY_NAME, CREATE_TIME, UPDATE_TIME, STATUS, REMARK
+        from COMPANY
+        where COMPANY_CODE = #{companyCode}
+    </select>
+</mapper>

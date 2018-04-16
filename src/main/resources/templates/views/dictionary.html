@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>平台字典目录</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/bootstrap/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/demo.css"/>
+    <script type="text/javascript" src="/easyui/jquery.min.js"/>
+    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"/>
+    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"/>
+    <script type="text/javascript" src="/js/dictionary.js"/>
+</head>
+<body>
+<div class="easyui-layout" data-options="fit:true">
+    <div data-options="region:'west',split:'true',title:''" style="width: 50%;">
+        <div>
+            <input class="easyui-searchbox" data-options="prompt:'字典类别搜索',menu:'#zd',searcher:doSearch"
+                   style="width:100%"/>
+            <div id="zd">
+                <div data-options="name:'1'">编码</div>
+                <div data-options="name:'2'">名称</div>
+            </div>
+        </div>
+        <table id="classTable" class="easyui-datagrid" title="平台值域分类 " style="width:100%;height:100%;" pagination="true"
+               data-options="striped: true,fitColumns: true,rownumbers: true,
+                iconCls: 'icon-edit',
+                singleSelect: true,
+                toolbar: '#classTb',
+                url: 'dictionary/queryRangeClass',
+                method: 'get',
+                onClickRow:onClickRow,
+                onClickCell: onClickCell,
+                onEndEdit: onEndEdit
+            ">
+            <thead>
+            <tr>
+                <th data-options="field:'platformCode',width:200,align:'center',editor:'textbox',required:true">分类编码
+                </th>
+                <th data-options="field:'platformName',width:400,align:'center',editor:'textbox',required:true">分类名称
+                </th>
+                <th data-options="field:'remark',width:500,align:'center',editor:'textbox'">描述</th>
+                <th data-options="field:'status',width:200,align:'center',editor:{type:'checkbox',options:{on:'1',off:'0'}}">
+                    启用状态
+                </th>
+            </tr>
+            </thead>
+        </table>
+        <div id="classTb" style="height:auto;">
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true"
+               onclick="append()">新增</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true"
+               onclick="removeit()">删除</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true"
+               onclick="accept()">保存</a>
+        </div>
+    </div>
+    <div data-options="region:'center'" style="width:50%;height:100%;">
+        <table id="detailTable" class="easyui-datagrid" title="平台值域分类明细" style="width:100%;height:100%;"
+               pagination="true"
+               data-options="striped: true,fitColumns: true,rownumbers: true,
+                iconCls: 'icon-edit',
+                singleSelect: true,
+                toolbar: '#detailTb',
+                method: 'get',
+                onClickCell: onDClickCell,
+                onEndEdit: onEndEdit">
+            <thead>
+            <tr>
+                <th data-options="field:'detailCode',width:200,editor:'textbox',required:true">值编码</th>
+                <th data-options="field:'detailName',width:400,editor:'textbox',required:true">值名称</th>
+                <th data-options="field:'platformName',width:400">所属分类</th>
+                <th data-options="field:'platformCode',hidden:true">所属分类</th>
+                <!-- <th data-options="field:'platformCode',width:200,
+                formatter:function(value,row){
+                                return row.platformName;
+                            },
+                            editor:{
+                                type:'combobox',
+                                options:{
+                                    valueField:'platformCode',
+                                    textField:'platformName',
+                                    method:'get',
+                                    url:'dictionary/queryClassList',
+                                    required:true
+                                }
+                            }">所属分类</th> -->
+            </tr>
+            </thead>
+        </table>
+        <div id="detailTb" style="height:auto;">
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true"
+               onclick="detailAppend()">新增</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true"
+               onclick="detailRemoveit()">删除</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true"
+               onclick="detailAccept()">保存</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

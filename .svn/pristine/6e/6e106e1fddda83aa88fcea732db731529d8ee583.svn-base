@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.adtech.cn.mapper.RangeClassMapper">
+	<sql id="Base_Column_List">
+		ID, PLATFORM_CODE, PLATFORM_NAME, STATUS, CREATE_TIME,
+		UPDATE_TIME,
+		REMARK
+	</sql>
+	<!-- 根据分类编码查询数据 -->
+	<select id="selectByCode" resultType="com.adtech.cn.domain.RangeClass"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from PLATFORM_RANGE_CLASS
+		where PLATFORM_CODE = #{platformCode}
+	</select>
+	<!-- 根据主键ID删除数据 -->
+	<delete id="deleteByPrimaryKey" parameterType="long">
+		delete from
+		PLATFORM_RANGE_CLASS
+		where ID = #{id}
+	</delete>
+	<!-- 新增数据 -->
+	<insert id="insertSelective" parameterType="com.adtech.cn.domain.RangeClass">
+		insert into PLATFORM_RANGE_CLASS
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				ID,
+			</if>
+			<if test="platformCode != null">
+				PLATFORM_CODE,
+			</if>
+			<if test="platformName != null">
+				PLATFORM_NAME,
+			</if>
+			<if test="status != null">
+				STATUS,
+			</if>
+			<if test="createTime != null">
+				CREATE_TIME,
+			</if>
+			<if test="updateTime != null">
+				UPDATE_TIME,
+			</if>
+			<if test="remark != null">
+				REMARK,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id},
+			</if>
+			<if test="platformCode != null">
+				#{platformCode},
+			</if>
+			<if test="platformName != null">
+				#{platformName},
+			</if>
+			<if test="status != null">
+				#{status},
+			</if>
+			<if test="createTime != null">
+				#{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				#{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="remark != null">
+				#{remark},
+			</if>
+		</trim>
+	</insert>
+	<!-- 修改数据 -->
+	<update id="updateByPrimaryKeySelective" parameterType="com.adtech.cn.domain.RangeClass">
+		update PLATFORM_RANGE_CLASS
+		<set>
+			<if test="platformCode != null">
+				PLATFORM_CODE = #{platformCode},
+			</if>
+			<if test="platformName != null">
+				PLATFORM_NAME = #{platformName},
+			</if>
+			<if test="status != null">
+				STATUS = #{status},
+			</if>
+			<if test="createTime != null">
+				CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="updateTime != null">
+				UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="remark != null">
+				REMARK = #{remark},
+			</if>
+		</set>
+		where ID = #{id}
+	</update>
+	<!-- 查询分类总数据 -->
+	<select id="countNum" resultType="int">
+		SELECT count(1) from
+		PLATFORM_RANGE_CLASS
+	</select>
+	<!-- 查询分类分页数据 -->
+	<select id="findClass" resultType="com.adtech.cn.domain.RangeClass">
+		SELECT
+		a.ID, a.PLATFORM_CODE,
+		a.PLATFORM_NAME, a.STATUS, a.CREATE_TIME,
+		a.UPDATE_TIME, a.REMARK
+		FROM
+		(SELECT ROWNUM AS rowno, t.*
+		FROM PLATFORM_RANGE_CLASS t
+		WHERE ROWNUM
+		&lt;= #{page}*#{rows}) a
+		WHERE a.rowno &gt; (#{page}-1)*#{rows}
+	</select>
+	<!-- 查询分类下拉列数据 -->
+	<select id="findClassList" resultType="java.util.Map">
+		SELECT PLATFORM_CODE
+		"platformCode", PLATFORM_NAME "platformName" FROM
+		PLATFORM_RANGE_CLASS
+	</select>
+
+
+	<!-- 搜索分类分页数据 -->
+	<select id="searchClass" resultType="com.adtech.cn.domain.RangeClass"
+		parameterType="map">
+		<choose>
+			<when test="type==1">
+				SELECT
+				a.ID, a.PLATFORM_CODE, a.PLATFORM_NAME,
+				a.STATUS, a.CREATE_TIME,
+				a.UPDATE_TIME, a.REMARK
+				FROM (SELECT ROWNUM
+				AS rowno, t.*
+				FROM PLATFORM_RANGE_CLASS t
+				WHERE ROWNUM &lt;=
+				#{page}*#{rows} and t.PLATFORM_CODE LIKE
+				CONCAT(#{value},'%') AND
+				STATUS =1) a
+				WHERE a.rowno &gt; (#{page}-1)*#{rows}
+			</when>
+			<when test="type==2">
+				SELECT
+				a.ID, a.PLATFORM_CODE, a.PLATFORM_NAME,
+				a.STATUS, a.CREATE_TIME,
+				a.UPDATE_TIME, a.REMARK
+				FROM (SELECT ROWNUM
+				AS rowno, t.*
+				FROM PLATFORM_RANGE_CLASS t
+				WHERE ROWNUM &lt;=
+				#{page}*#{rows} and t.PLATFORM_NAME LIKE
+				CONCAT(#{value},'%') AND
+				STATUS =1) a
+				WHERE a.rowno &gt; (#{page}-1)*#{rows}
+			</when>
+		</choose>
+	</select>
+	<!-- 搜索分类总数据 -->
+	<select id="searchCountNum" resultType="int" parameterType="map">
+		<choose>
+			<when test="type==1">
+				SELECT count(1) from PLATFORM_RANGE_CLASS where
+				PLATFORM_CODE LIKE
+				CONCAT(#{value},'%') AND STATUS =1
+			</when>
+			<when test="type==2">
+				SELECT count(1) from PLATFORM_RANGE_CLASS where
+				PLATFORM_NAME LIKE
+				CONCAT(#{value},'%') AND STATUS =1
+			</when>
+		</choose>
+	</select>
+</mapper>

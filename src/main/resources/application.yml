@@ -1,0 +1,45 @@
+server:
+  port: 9001
+
+spring:
+  http:
+     multipart:
+       max-file-size: 50MB
+  thymeleaf:
+    prefix: classpath:/templates/views/
+    suffix: .html
+    cache: false
+  application:
+    name: conversion
+  profiles:
+    active: dev
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+excel:
+  template: classpath:template.xls
+convertUrl: convert
+menus:
+   menuid: sys_menu
+   menuname: 系统管理
+   lists:
+      - menu:
+          menuid: 11
+          menuname: 接入厂商
+          url: companyList
+      - menu:
+          menuid: 12
+          menuname: 平台字典
+          url: dictionaryList
+      - menu:
+          menuid: 13
+          menuname: 数据批量导入
+          url: dataimport
+
+
+
+

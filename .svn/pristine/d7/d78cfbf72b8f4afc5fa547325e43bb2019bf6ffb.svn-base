@@ -1,0 +1,347 @@
+2018-03-19 09:22:50,869 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1080 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 09:22:50,869 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 09:22:50,869 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 09:48:47,314 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6164 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 09:48:47,314 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 09:48:47,314 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 09:48:53,398 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.692 seconds (JVM running for 7.709)
+2018-03-19 09:50:55,059 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3680 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 09:50:55,059 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 09:50:55,059 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 09:51:00,581 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.068 seconds (JVM running for 6.856)
+2018-03-19 10:05:04,038 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5484 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:05:04,038 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:05:04,038 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:05:10,012 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.973 seconds (JVM running for 8.277)
+2018-03-19 10:34:19,993 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6436 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:34:19,993 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:34:19,993 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:34:30,195 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 11.466 seconds (JVM running for 17.739)
+2018-03-19 10:35:27,473 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5884 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:35:27,473 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:35:27,473 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:35:34,571 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.816 seconds (JVM running for 8.935)
+2018-03-19 10:42:05,102 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6780 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:42:05,102 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:42:05,102 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:42:15,164 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 10.873 seconds (JVM running for 12.249)
+2018-03-19 10:43:29,182 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6264 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:43:29,182 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:43:29,182 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:43:37,061 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.737 seconds (JVM running for 10.119)
+2018-03-19 10:44:02,374 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6320 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:44:02,374 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:44:02,374 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:44:10,159 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.409 seconds (JVM running for 9.401)
+2018-03-19 10:47:46,239 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1352 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:47:46,249 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:47:46,250 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:47:53,522 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.951 seconds (JVM running for 9.085)
+2018-03-19 10:51:48,535 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4080 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:51:48,535 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:51:48,535 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:51:55,461 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.583 seconds (JVM running for 8.546)
+2018-03-19 10:52:35,127 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6816 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:52:35,127 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:52:35,127 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:52:41,991 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.598 seconds (JVM running for 8.718)
+2018-03-19 10:56:58,067 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6812 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 10:56:58,067 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 10:56:58,067 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 10:57:04,557 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.098 seconds (JVM running for 8.169)
+2018-03-19 11:06:29,221 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1300 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:06:29,234 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:06:29,235 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:06:36,670 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.173 seconds (JVM running for 9.199)
+2018-03-19 11:07:10,049 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5708 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:07:10,053 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:07:10,054 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:07:17,692 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.367 seconds (JVM running for 9.452)
+2018-03-19 11:08:21,937 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3180 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:08:21,946 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:08:21,947 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:08:30,245 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.06 seconds (JVM running for 10.026)
+2018-03-19 11:08:46,752 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6160 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:08:46,763 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:08:46,764 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:08:54,264 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.172 seconds (JVM running for 9.164)
+2018-03-19 11:09:16,753 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6464 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:09:16,760 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:09:16,761 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:09:24,581 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.543 seconds (JVM running for 9.619)
+2018-03-19 11:24:52,122 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8092 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:24:52,126 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:24:52,127 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:24:58,693 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.206 seconds (JVM running for 8.136)
+2018-03-19 11:25:44,709 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7236 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:25:44,714 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:25:44,715 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:25:52,446 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.381 seconds (JVM running for 9.489)
+2018-03-19 11:38:40,906 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5884 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:38:40,910 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:38:40,911 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:38:47,944 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.665 seconds (JVM running for 8.608)
+2018-03-19 11:44:22,206 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4628 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:44:22,209 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:44:22,210 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:44:29,642 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.044 seconds (JVM running for 9.015)
+2018-03-19 11:51:18,681 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5640 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:51:18,686 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:51:18,687 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:51:25,028 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.042 seconds (JVM running for 7.941)
+2018-03-19 11:53:33,490 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7856 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 11:53:33,494 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 11:53:33,495 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 11:53:40,496 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.665 seconds (JVM running for 8.709)
+2018-03-19 12:01:16,349 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5732 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 12:01:16,353 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 12:01:16,354 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 12:01:23,291 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.562 seconds (JVM running for 8.567)
+2018-03-19 13:38:59,132 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1304 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 13:38:59,136 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 13:38:59,138 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 13:39:05,852 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.341 seconds (JVM running for 8.236)
+2018-03-19 13:39:31,133 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7088 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 13:39:31,137 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 13:39:31,138 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 13:39:37,852 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.371 seconds (JVM running for 8.538)
+2018-03-19 14:06:12,842 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6816 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:06:12,846 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:06:12,847 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:06:19,543 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.35 seconds (JVM running for 8.24)
+2018-03-19 14:08:49,860 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7332 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:08:49,865 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:08:49,866 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:08:58,030 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.09 seconds (JVM running for 10.497)
+2018-03-19 14:09:37,297 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5200 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:09:37,306 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:09:37,306 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:09:45,047 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.556 seconds (JVM running for 10.038)
+2018-03-19 14:16:36,930 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1676 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:16:36,934 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:16:36,935 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:16:44,783 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.642 seconds (JVM running for 9.742)
+2018-03-19 14:37:44,387 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5820 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:37:44,392 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:37:44,392 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:37:51,661 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.89 seconds (JVM running for 8.84)
+2018-03-19 14:41:19,777 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6340 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:41:19,782 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:41:19,782 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:41:27,367 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.251 seconds (JVM running for 9.205)
+2018-03-19 14:42:12,633 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5732 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:42:12,639 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:42:12,640 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:42:19,525 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.521 seconds (JVM running for 8.397)
+2018-03-19 14:43:26,958 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7292 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:43:26,962 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:43:26,963 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:43:34,059 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.772 seconds (JVM running for 8.706)
+2018-03-19 14:44:31,505 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7048 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:44:31,510 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:44:31,512 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:44:38,659 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.802 seconds (JVM running for 8.782)
+2018-03-19 14:45:30,128 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4480 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:45:30,133 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:45:30,133 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:45:36,838 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.356 seconds (JVM running for 8.282)
+2018-03-19 14:46:48,882 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7652 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:46:48,888 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:46:48,889 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:46:56,501 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.249 seconds (JVM running for 9.342)
+2018-03-19 14:47:50,129 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6188 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:47:50,135 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:47:50,136 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:47:57,914 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.986 seconds (JVM running for 10.165)
+2018-03-19 14:52:55,059 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6284 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:52:55,063 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:52:55,063 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:53:03,017 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.785 seconds (JVM running for 9.879)
+2018-03-19 14:53:33,261 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2476 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:53:33,265 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:53:33,266 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:53:41,388 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.872 seconds (JVM running for 10.049)
+2018-03-19 14:54:41,915 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7184 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 14:54:41,923 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 14:54:41,923 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 14:54:50,252 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.129 seconds (JVM running for 10.235)
+2018-03-19 15:25:54,593 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4404 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:25:54,598 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:25:54,599 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:26:03,128 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.246 seconds (JVM running for 10.326)
+2018-03-19 15:30:02,426 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7100 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:30:02,437 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:30:02,437 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:30:10,561 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.983 seconds (JVM running for 10.156)
+2018-03-19 15:33:49,004 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7776 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:33:49,009 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:33:49,009 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:33:56,629 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.305 seconds (JVM running for 9.323)
+2018-03-19 15:35:39,212 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8152 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:35:39,217 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:35:39,217 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:35:47,048 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.618 seconds (JVM running for 9.749)
+2018-03-19 15:43:54,059 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4520 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:43:54,073 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:43:54,074 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:44:01,108 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.721 seconds (JVM running for 8.669)
+2018-03-19 15:45:25,446 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5576 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:45:25,449 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:45:25,450 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:45:32,505 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.708 seconds (JVM running for 8.688)
+2018-03-19 15:48:14,344 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8160 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:48:14,347 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:48:14,348 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:48:21,716 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.018 seconds (JVM running for 8.995)
+2018-03-19 15:52:04,322 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4604 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:52:04,328 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:52:04,329 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:52:12,558 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.98 seconds (JVM running for 10.107)
+2018-03-19 15:54:00,368 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6748 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:54:00,410 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:54:00,418 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:54:08,375 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.503 seconds (JVM running for 10.798)
+2018-03-19 15:54:57,147 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6716 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:54:57,152 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:54:57,155 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:55:05,710 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.324 seconds (JVM running for 10.429)
+2018-03-19 15:56:22,441 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3640 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:56:22,446 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:56:22,447 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:56:30,462 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.808 seconds (JVM running for 9.935)
+2018-03-19 15:57:15,798 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5200 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 15:57:15,804 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 15:57:15,804 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 15:57:23,741 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.868 seconds (JVM running for 10.288)
+2018-03-19 16:06:49,572 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7032 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:06:49,577 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:06:49,578 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:06:57,278 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.453 seconds (JVM running for 9.62)
+2018-03-19 16:07:37,261 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4596 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:07:37,266 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:07:37,267 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:07:45,381 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.776 seconds (JVM running for 9.924)
+2018-03-19 16:09:10,092 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5292 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:09:10,097 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:09:10,097 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:09:17,363 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.035 seconds (JVM running for 9.586)
+2018-03-19 16:12:20,555 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7112 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:12:20,560 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:12:20,560 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:12:28,498 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.951 seconds (JVM running for 10.565)
+2018-03-19 16:14:52,081 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1076 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:14:52,085 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:14:52,087 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:15:00,430 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.048 seconds (JVM running for 10.087)
+2018-03-19 16:20:54,083 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3544 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:20:54,088 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:20:54,089 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:21:01,636 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.254 seconds (JVM running for 9.547)
+2018-03-19 16:24:07,646 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6892 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:24:07,651 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:24:07,651 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:24:15,883 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.179 seconds (JVM running for 10.487)
+2018-03-19 16:24:49,619 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6024 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:24:49,643 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:24:49,647 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:24:58,003 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.131 seconds (JVM running for 10.401)
+2018-03-19 16:27:39,304 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 8164 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:27:39,308 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:27:39,309 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:27:47,770 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.152 seconds (JVM running for 10.281)
+2018-03-19 16:29:53,146 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6304 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:29:53,152 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:29:53,153 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:30:00,989 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.599 seconds (JVM running for 9.7)
+2018-03-19 16:32:08,488 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4668 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:32:08,495 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:32:08,496 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:32:16,378 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.663 seconds (JVM running for 9.776)
+2018-03-19 16:33:41,133 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3276 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:33:41,140 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:33:41,140 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:33:48,943 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.531 seconds (JVM running for 9.678)
+2018-03-19 16:36:09,233 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1632 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:36:09,237 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:36:09,239 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:36:16,333 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.743 seconds (JVM running for 8.678)
+2018-03-19 16:37:02,007 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4648 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:37:02,013 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:37:02,014 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:37:08,976 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.709 seconds (JVM running for 8.776)
+2018-03-19 16:37:30,386 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6936 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:37:30,391 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:37:30,392 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:37:39,228 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.612 seconds (JVM running for 10.746)
+2018-03-19 16:39:45,326 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6660 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:39:45,330 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:39:45,331 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:39:52,793 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.154 seconds (JVM running for 9.079)
+2018-03-19 16:40:40,902 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7420 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:40:40,915 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:40:40,916 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:40:48,799 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.724 seconds (JVM running for 9.952)
+2018-03-19 16:46:39,348 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6308 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:46:39,357 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:46:39,358 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:46:46,916 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.259 seconds (JVM running for 9.226)
+2018-03-19 16:50:58,872 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3132 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 16:50:58,877 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 16:50:58,877 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 16:51:05,789 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.587 seconds (JVM running for 8.601)
+2018-03-19 17:04:08,555 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7164 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:04:08,559 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:04:08,560 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:04:15,285 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.371 seconds (JVM running for 8.299)
+2018-03-19 17:05:53,674 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7936 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:05:53,677 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:05:53,678 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:06:00,818 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.797 seconds (JVM running for 8.741)
+2018-03-19 17:09:57,524 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7232 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:09:57,528 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:09:57,529 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:10:05,327 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.611 seconds (JVM running for 9.858)
+2018-03-19 17:10:25,696 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2716 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:10:25,701 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:10:25,702 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:10:33,417 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.513 seconds (JVM running for 9.631)
+2018-03-19 17:16:58,185 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1220 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:16:58,190 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:16:58,191 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:17:06,634 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.246 seconds (JVM running for 10.898)
+2018-03-19 17:17:19,999 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 7496 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:17:20,003 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:17:20,004 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:17:28,316 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 9.126 seconds (JVM running for 10.174)
+2018-03-19 17:18:15,920 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 5988 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:18:15,924 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:18:15,924 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:18:22,995 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.743 seconds (JVM running for 8.654)
+2018-03-19 17:19:29,079 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 2764 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:19:29,083 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:19:29,085 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:19:36,149 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.785 seconds (JVM running for 8.783)
+2018-03-19 17:24:11,614 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6500 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:24:11,618 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:24:11,618 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:24:18,695 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.728 seconds (JVM running for 8.73)
+2018-03-19 17:28:02,105 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 1692 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:28:02,109 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:28:02,109 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:28:09,688 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.382 seconds (JVM running for 9.599)
+2018-03-19 17:29:19,451 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 3288 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:29:19,457 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:29:19,461 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:29:26,805 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.967 seconds (JVM running for 8.842)
+2018-03-19 17:30:29,763 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4676 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:30:29,768 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:30:29,768 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:30:37,179 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 8.324 seconds (JVM running for 9.304)
+2018-03-19 17:32:41,173 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 6568 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:32:41,176 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:32:41,177 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:32:48,304 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 7.957 seconds (JVM running for 8.935)
+2018-03-19 17:34:46,685 INFO (StartupInfoLogger.java:48)- Starting ConversionApplication on CUTEBABY-NOTE with PID 4596 (D:\conversion\target\classes started by Administrator in D:\conversion)
+2018-03-19 17:34:46,689 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-19 17:34:46,689 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-03-19 17:34:53,012 INFO (StartupInfoLogger.java:57)- Started ConversionApplication in 6.941 seconds (JVM running for 7.898)

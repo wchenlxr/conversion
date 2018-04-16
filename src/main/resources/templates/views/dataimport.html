@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>批量数据导入</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/bootstrap/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="/webuploader/webuploader.css"/>
+    <script type="text/javascript" src="/easyui/jquery.min.js"/>
+    <script type="text/javascript" src="/easyui/jquery.easyui.min.js"/>
+    <script type="text/javascript" src="/easyui/locale/easyui-lang-zh_CN.js"/>
+</head>
+<body>
+<div id="wrapper">
+    <div id="container">
+        <!--头部，相册选择和格式选择-->
+        <div id="uploader" class="wu-example">
+            <!--用来存放文件信息-->
+            <div id="thelist" class="uploader-list"></div>
+            <div class="btns">请选择导入数据类型：
+                <select id="dq" name="dq" style="width: 120px">
+                    <option value="2800">--导入数据类型</option>
+                    <option value="2801" selected="selected">字典值域</option>
+                    <option value="2802"></option>
+                </select>
+                <div id="picker">选择文件</div>
+                <button id="ctlBtn" class="btn btn-default">开始上传</button>
+            </div>
+        </div>
+
+        <h3>注意事项</h3>
+        <div class="highlight">
+                <pre>
+                    <form id="templateDownForm" action="dataimport/download">
+                        <span class="nt">1、导入文件格式下载:<button id="downloadBtn"
+                                                            class="btn btn-default">下载模板</button></span>
+                    </form>
+                    <span class="nt">2、文件格式要求:</span>
+                    <span class="nt">一、文件内容必须全部转化为文本格式进行导入</span>
+                    <span class="nt">二、时间内容必须符合yyyy-MM-dd格式，如2015-01-01</span>
+                    <span class="nt">三、如果系统是数字型的，则导入进去的也必须是数字型，不能带中文或者字符之类</span>
+                </pre>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/webuploader/webuploader.js"/>
+<script type="text/javascript" src="/webuploader/excelupload.js"/>
+</body>
+</html>
