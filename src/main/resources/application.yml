@@ -1,6 +1,7 @@
 server:
   port: 9001
-
+  tomcat:
+    basedir: ./tmp
 spring:
   http:
      multipart:

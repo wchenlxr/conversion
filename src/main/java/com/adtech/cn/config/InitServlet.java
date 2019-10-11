@@ -1,29 +1,20 @@
 package com.adtech.cn.config;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.adtech.cn.domain.RangeDetail;
+import com.adtech.cn.mapper.RangeDetailMapper;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.cjk.CJKAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.util.Version;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.adtech.cn.domain.RangeDetail;
-import com.adtech.cn.mapper.RangeDetailMapper;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 初始化加载方法
@@ -35,8 +26,11 @@ public class InitServlet {
     @Autowired
     private RangeDetailMapper detailMapper;
 
+//    @Autowired
+//    private IndexConfig indexConfig;
+
     @Autowired
-    private IndexConfig indexConfig;
+    private IndexWriter indexWriter;
 
     /**
      * 创建索引
@@ -49,23 +43,23 @@ public class InitServlet {
         map.put("indexStatus", 0);
         // 查询所有的明细数据
         List<RangeDetail> rdList = detailMapper.findAllDetail(map);
-        Directory directory = null;
-        IndexWriter indexWriter = null;
+//        Directory directory = null;
+//        IndexWriter indexWriter = null;
         try {
-            directory = FSDirectory.open(new File(indexConfig.getLocation()));
-            Analyzer analyzer = new CJKAnalyzer(Version.LATEST);
+//            directory = FSDirectory.open(new File(indexConfig.getLocation()));
+//            Analyzer analyzer = new CJKAnalyzer(Version.LATEST);
             // 索引配置
-            IndexWriterConfig indexWriterConfig = new IndexWriterConfig(Version.LATEST, analyzer);
+//            IndexWriterConfig indexWriterConfig = new IndexWriterConfig(Version.LATEST, analyzer);
 //            // 设置打开索引模式为创建或追加
 //            indexWriterConfig.setOpenMode(IndexWriterConfig.OpenMode.CREATE_OR_APPEND);
-            indexWriter = new IndexWriter(directory, indexWriterConfig);
+//            indexWriter = new IndexWriter(directory, indexWriterConfig);
             for (RangeDetail rd : rdList) {
                 if (StringUtils.isEmpty(rd.getDetailName()) || StringUtils.isEmpty(rd.getPlatformCode()) || StringUtils.isEmpty(rd.getDetailCode()))
                     continue;
                 // 创建文档对象
                 Document document = new Document();
                 StringField idField = new StringField("id", rd.getId().toString(), Store.YES);
-                StringField platformCodeField = new StringField("platformCode", rd.getPlatformCode(), Store.YES);
+                StringField platformCodeField = new StringField("platformCode",rd.getPlatformCode(), Store.YES);
                 StringField detailCodeField = new StringField("detailCode", rd.getDetailCode(), Store.YES);
                 TextField detailNameField = new TextField("detailName", rd.getDetailName(), Store.YES);
                 document.add(idField);
@@ -84,22 +78,22 @@ public class InitServlet {
             // TODO Auto-generated catch block
             e.printStackTrace();
         } finally {
-            if (indexWriter != null) {
+/*            if (indexWriter != null) {
                 try {
                     indexWriter.close();
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-            }
-            if (directory != null) {
+            }*/
+/*            if (directory != null) {
                 try {
                     directory.close();
                 } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-            }
+            }*/
 
         }
 

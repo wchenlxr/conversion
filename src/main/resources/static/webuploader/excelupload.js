@@ -19,7 +19,7 @@ var uploader = WebUploader.create({
 var $upload = $("#ctlBtn");
 $upload.on('click', function () {
     var dq = $("#dq").val();
-    var t = 'dataimport/excelUpload';
+    var t = 'file/templateUpload';
     t = t + "?dz=" + dq;
     uploader.options.server = t;
     uploader.upload();

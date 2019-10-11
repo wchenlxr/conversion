@@ -10,9 +10,9 @@
         a.update_time,
         a.status,
         a.remark
-        FROM (SELECT ROWNUM AS rowno, t.*
+        FROM (SELECT ROWNUM AS rowno,aa.* from (select t.*
         FROM COMPANY t
-        WHERE ROWNUM &lt;= #{page}*#{rows}) a
+         order by t.status desc )aa WHERE ROWNUM &lt;= #{page}*#{rows} ) a
         WHERE a.rowno &gt; (#{page}-1)*#{rows}
     </select>
     <!--统计业务厂商数量-->

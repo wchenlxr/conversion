@@ -35,17 +35,6 @@ public interface RangeClassMapper {
      */
     int updateByPrimaryKeySelective(RangeClass record);
     /**
-     * 查询分类总数据
-     * @return
-     */
-    int countNum();
-    /**
-     * 查询分类分页数据
-     * @param map
-     * @return
-     */
-    List<RangeClass> findClass(Map<String,Integer> map);
-    /**
      * 查询分类下拉列数据
      * @return
      */

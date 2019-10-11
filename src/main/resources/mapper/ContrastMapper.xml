@@ -75,15 +75,15 @@
 	</select>
     <!-- 查询转码匹配分页数据 -->
     <select id="findContrast" resultType="com.adtech.cn.domain.Contrast" parameterType="map">
-		SELECT
-		a.ID, a.COMPANY_CODE, a.PLATFORM_RANGE_CODE, a.COMPANY_RANGE_CODE, a.PLATFORM_DETAIL_CODE, a.SCORE, a.SELECTED, b.DETAIL_NAME as "platformDetailName"
-		FROM (SELECT ROWNUM AS rowno, t.*
+          SELECT a.ID, a.COMPANY_CODE, a.PLATFORM_RANGE_CODE, a.COMPANY_RANGE_CODE, a.PLATFORM_DETAIL_CODE, a.SCORE, a.SELECTED,
+    (select b.DETAIL_NAME from PLATFORM_RANGE_DETAIL b where  b.DETAIL_CODE=a.PLATFORM_DETAIL_CODE AND b.platform_code=a.platform_range_code and trim(b.DETAIL_NAME) = trim(a.PLATFORM_DETAIL_NAME) and rownum =1)
+     as "platformDetailName"
+		FROM (select ROWNUM AS rowno,aa.* from (SELECT t.*
 		FROM CONTRAST t
 		WHERE COMPANY_RANGE_CODE= #{companyRangeCode}
 		AND PLATFORM_RANGE_CODE = #{platformRangeCode}
 		AND COMPANY_CODE = #{companyCode}
-		AND ROWNUM &lt;= #{page}*#{rows}) a
-		JOIN PLATFORM_RANGE_DETAIL b on b.DETAIL_CODE=a.PLATFORM_DETAIL_CODE AND b.platform_code=a.platform_range_code
+	    order by t.score desc )aa where ROWNUM &lt;= #{page}*#{rows}) a
 		WHERE a.rowno &gt; (#{page}-1)*#{rows}
 	</select>
     <!-- 修改转码匹配选中状态 -->

@@ -49,13 +49,6 @@ public interface RangeContrastMapper {
 	 */
 	int deleteByCompanyCodeAndRangeCode(Map<String, String> map);
 	/**
-	 * 按业务厂商编码与平台值域类别查询厂商值域对照分页数据
-	 * 
-	 * @param map
-	 * @return
-	 */
-	List<RangeContrast> selectByCompanyCodeAndCompanyRangeCode(Map<String, Object> map);
-	/**
 	 * 搜索分类分页数据
 	 * 
 	 * @param map
@@ -64,18 +57,11 @@ public interface RangeContrastMapper {
 	List<RangeContrast> searchRangeContrast(Map<String, Object> map);
 	/**
 	 * 查询所有厂商值域对照数据
-	 * 
+	 *
 	 * @param map
 	 * @return
 	 */
 	List<RangeContrast> findAllRangeContrast(Map<String, String> map);
-	/**
-	 * 按业务厂商编码与平台值域类别查询总量
-	 * 
-	 * @param map
-	 * @return
-	 */
-	int countNum(Map<String, Object> map);
 	/**
 	 * 搜索分类总数据
 	 * 
@@ -83,4 +69,11 @@ public interface RangeContrastMapper {
 	 * @return
 	 */
 	int searchCountNum(Map<String, Object> map);
+
+	/**
+	 * 清空选中对照
+	 * @param id
+	 * @return
+	 */
+	int clearOne(Long id);
 }

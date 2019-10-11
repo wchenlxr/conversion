@@ -233,7 +233,8 @@ create table PLATFORM_RANGE_CONTRAST
   company_range_name   VARCHAR2(100),
   platform_detail_code VARCHAR2(100),
   platform_detail_name VARCHAR2(200),
-  contrast_time        DATE
+  contrast_time        DATE,
+  sd_status    char(1) default  '0'
 )
 tablespace HBF
   pctfree 10
@@ -270,6 +271,9 @@ comment on column PLATFORM_RANGE_CONTRAST.platform_detail_name
   is '平台值名称';
 comment on column PLATFORM_RANGE_CONTRAST.contrast_time
   is '对比日期';
+comment on column PLATFORM_RANGE_CONTRAST.sd_status
+  is '标志(1手工,0未手工)';
+
 -- Create/Recreate indexes 
 create index INDEX_COMPANY on PLATFORM_RANGE_CONTRAST (COMPANY_CODE)
   tablespace HBF

@@ -22,8 +22,8 @@
             <input class="easyui-searchbox" data-options="prompt:'字典类别搜索',menu:'#zd',searcher:doSearch"
                    style="width:100%"/>
             <div id="zd">
-                <div data-options="name:'1'">编码</div>
-                <div data-options="name:'2'">名称</div>
+                <div data-options="name:'1'">分类编码</div>
+                <div data-options="name:'2'">分类名称</div>
             </div>
         </div>
         <table id="ptfltype"></table>
@@ -33,12 +33,13 @@
             <input id="sc" class="easyui-searchbox" data-options="prompt:'对照搜索',menu:'#mm',searcher:mmDoSearch"
                    style="width:40%;"/>
             <div id="mm">
-                <div data-options="name:'1'">厂商值</div>
-                <div data-options="name:'2'">平台</div>
+                <div data-options="name:'1'">厂商值域名称</div>
+                <div data-options="name:'2'">平台编码名称</div>
             </div>
             <span style="padding-left:10px; ">匹配程度：</span>
-            <input type="radio" name="ppFlag" value="1" checked="checked" onchange="ppFlagChange()">完全</input>
-            <input type="radio" name="ppFlag" value="0" onchange="ppFlagChange()">非完全</input>
+            <input type="radio" name="ppFlag" value="2" checked="checked" onchange="ppFlagChange()">全部</input>
+            <input type="radio" name="ppFlag" value="1" onchange="ppFlagChange()">名称相同</input>
+            <input type="radio" name="ppFlag" value="0" onchange="ppFlagChange()">名称不相同</input>
         </div>
         <div class="easyui-panel" style="width:100%;height:100%;padding:10px;">
             <div class="easyui-layout" data-options="fit:true">

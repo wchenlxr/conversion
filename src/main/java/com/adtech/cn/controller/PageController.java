@@ -12,10 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
     /**
      * 门户
+     *
      * @param model
      * @return
      */
-    @RequestMapping(value = "/index")
+    @RequestMapping(value = {"/index", "/"})
     public String indexPage(Model model) {
         model.addAttribute("name", "Dear");
         return "index";
@@ -23,6 +24,7 @@ public class PageController {
 
     /**
      * 业务厂商列表
+     *
      * @param model
      * @return
      */
@@ -34,6 +36,7 @@ public class PageController {
 
     /**
      * 平台字典列表
+     *
      * @param model
      * @return
      */
@@ -45,6 +48,7 @@ public class PageController {
 
     /**
      * 值域导入
+     *
      * @param model
      * @return
      */
@@ -56,11 +60,12 @@ public class PageController {
 
     /**
      * 业务厂商对照
+     *
      * @param model
      * @return
      */
     @RequestMapping(value = "/convert")
-    public String convertPage( Model model) {
+    public String convertPage(Model model) {
         return "convert";
     }
 }

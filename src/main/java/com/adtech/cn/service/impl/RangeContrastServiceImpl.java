@@ -14,14 +14,12 @@ import com.adtech.cn.utils.IdWorker;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;
+import org.apache.lucene.analysis.core.KeywordAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
@@ -45,38 +43,11 @@ public class RangeContrastServiceImpl implements IBaseService {
     private CompanyMapper companyMapper;
     @Autowired
     private ContrastMapper contrastMapper;
-    /*    @Autowired
-        private RangeClassMapper rangeClassMapper;*/
     @Autowired
     private IdWorker idWorker;
-    //    private PropertiesUtil propertiesUtil = new PropertiesUtil();
     @Autowired
     private IndexConfig indexConfig;
 
-    /**
-     * 业务厂商编码值域对照
-     *
-     * @param page
-     * @param rows
-     * @param companyCode
-     * @param platformRangeCode
-     * @param ppFlag
-     * @return
-     */
-    public String getRangeContrast(int page, int rows, String companyCode, String platformRangeCode, String ppFlag) {
-        Map<String, Object> map = new HashMap<>();
-        Map<String, Object> re = new HashMap<>();
-        map.put("companyCode", companyCode);
-        map.put("platformRangeCode", platformRangeCode);
-        map.put("ppFlag", ppFlag);
-        map.put("page", page);
-        map.put("rows", rows);
-        List<RangeContrast> rangeContrastList = rangeContrastMapper.selectByCompanyCodeAndCompanyRangeCode(map);
-        int total = rangeContrastMapper.countNum(map);
-        re.put("total", total);
-        re.put("rows", rangeContrastList);
-        return gson.toJson(re);
-    }
 
     /**
      * 搜索分类分页数据
@@ -90,7 +61,7 @@ public class RangeContrastServiceImpl implements IBaseService {
      * @param ppFlag
      * @return
      */
-    public String searchRangeContrast(int page, int rows, String companyCode, String platformRangeCode, int type,
+    public String searchRangeContrast(int page, int rows, String companyCode, String platformRangeCode, Integer type,
                                       String value, String ppFlag) {
         Map<String, Object> map = new HashMap<>();
         Map<String, Object> re = new HashMap<>();
@@ -189,46 +160,57 @@ public class RangeContrastServiceImpl implements IBaseService {
             IndexSearcher indexSearcher = new IndexSearcher(indexReader);
             Analyzer analyzer = new CJKAnalyzer(Version.LATEST);
             // 设置查询域
-            QueryParser parser = new QueryParser("detailName", analyzer);
+            BooleanQuery builder;
+            QueryParser parser1 = new QueryParser("detailName", analyzer);
+            QueryParser parser2 = new QueryParser("platformCode", new KeywordAnalyzer());
             for (RangeContrast rangeContrast : rcList) {
-                // 查询字符串
-                Query query = parser.parse(rangeContrast.getCompanyRangeName());
-                // 获取查询结果
-                TopDocs topDocs = indexSearcher.search(query, 10);
-                System.out.println("查询的总记录数为： " + topDocs.totalHits);
-                int count = 0;
-                for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
-                    int docID = scoreDoc.doc;
-                    // 根据id查询document对象
-                    Document document = indexSearcher.doc(docID);
-                    // 根据document对象获取相应的信息
-                    System.out.println("用户名: " + document.get("detailName"));
-                    System.out.println("匹配得分: " + scoreDoc.score);
-                    Contrast contrast = new Contrast();
-                    contrast.setId(idWorker.getId());
-                    contrast.setCompanyCode(rangeContrast.getCompanyCode());
-                    contrast.setPlatformRangeCode(rangeContrast.getPlatformRangeCode());
-                    contrast.setCompanyRangeCode(rangeContrast.getCompanyRangeCode());
-                    contrast.setPlatformDetailCode(document.get("detailCode"));
-                    contrast.setScore(scoreDoc.score);
-                    // 将匹配度最高的数据更新到厂商值域对照表
-                    if (count == 0) {
-                        contrast.setSelected(1);
-                        RangeContrast rc = new RangeContrast();
-                        rc.setCompanyCode(contrast.getCompanyCode());
-                        rc.setPlatformRangeCode(contrast.getPlatformRangeCode());
-                        rc.setCompanyRangeCode(contrast.getCompanyRangeCode());
-                        rc.setPlatformDetailCode(contrast.getPlatformDetailCode());
-                        rc.setPlatformDetailName(document.get("detailName"));
-                        rc.setContrastTime(new Date());
-                        rangeContrastMapper.updatePlatformDetail(rc);
-                    } else {
-                        contrast.setSelected(0);
+                try {
+                    // 查询字符串
+                    builder = new BooleanQuery();
+                    Query query1 = parser1.parse(escapeQueryChars(rangeContrast.getCompanyRangeName()));
+                    builder.add(query1, BooleanClause.Occur.SHOULD);
+                    Query query2 = parser2.parse("\"" + rangeContrast.getPlatformRangeCode() + "\"");
+                    builder.add(query2, BooleanClause.Occur.MUST);
+                    // 获取查询结果
+                    TopDocs topDocs = indexSearcher.search(builder, 50);
+                    System.out.println("查询的总记录数为： " + topDocs.totalHits);
+                    int count = 0;
+                    for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
+                        int docID = scoreDoc.doc;
+                        // 根据id查询document对象
+                        Document document = indexSearcher.doc(docID);
+                        // 根据document对象获取相应的信息
+                        System.out.println("用户名: " + document.get("detailName"));
+                        System.out.println("匹配得分: " + scoreDoc.score);
+                        Contrast contrast = new Contrast();
+                        contrast.setId(idWorker.getId());
+                        contrast.setCompanyCode(rangeContrast.getCompanyCode());
+                        contrast.setPlatformRangeCode(rangeContrast.getPlatformRangeCode());
+                        contrast.setCompanyRangeCode(rangeContrast.getCompanyRangeCode());
+                        contrast.setPlatformDetailCode(document.get("detailCode"));
+                        contrast.setPlatformDetailName(document.get("detailName"));
+                        contrast.setScore(scoreDoc.score);
+                        // 将匹配度最高的数据更新到厂商值域对照表
+                        if (count == 0) {
+                            contrast.setSelected(1);
+                            RangeContrast rc = new RangeContrast();
+                            rc.setCompanyCode(contrast.getCompanyCode());
+                            rc.setPlatformRangeCode(contrast.getPlatformRangeCode());
+                            rc.setCompanyRangeCode(contrast.getCompanyRangeCode());
+                            rc.setPlatformDetailCode(contrast.getPlatformDetailCode());
+                            rc.setPlatformDetailName(document.get("detailName"));
+                            rc.setContrastTime(new Date());
+                            rc.setSdStatus("0");
+                            rangeContrastMapper.updatePlatformDetail(rc);
+                        } else {
+                            contrast.setSelected(0);
+                        }
+                        contrastMapper.insertSelective(contrast);
+                        count++;
                     }
-                    contrastMapper.insertSelective(contrast);
-                    count++;
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-
             }
             directory.close();
             indexReader.close();
@@ -266,11 +248,13 @@ public class RangeContrastServiceImpl implements IBaseService {
                     rangeContrast.setPlatformDetailCode(contrast.getPlatformDetailCode());
                     rangeContrast.setPlatformDetailName(contrast.getPlatformDetailName());
                     rangeContrast.setContrastTime(new Date());
+                    rangeContrast.setSdStatus("1");
                     rangeContrastMapper.updatePlatformDetail(rangeContrast);
                 } else {
                     rangeContrast.setPlatformDetailCode("");
                     rangeContrast.setPlatformDetailName("");
                     rangeContrast.setContrastTime(null);
+                    rangeContrast.setSdStatus("0");
                     rangeContrastMapper.updatePlatformDetail(rangeContrast);
                 }
             }
@@ -296,6 +280,7 @@ public class RangeContrastServiceImpl implements IBaseService {
         rc.setPlatformDetailCode("");
         rc.setPlatformDetailName("");
         rc.setContrastTime(null);
+        rc.setSdStatus("0");
         // 按业务厂商编码以及平台分类编码删除匹配临时表数据
         contrastMapper.deleteByCode(map);
         rangeContrastMapper.updatePlatformDetail(rc);
@@ -303,6 +288,21 @@ public class RangeContrastServiceImpl implements IBaseService {
         List<RangeContrast> allRC = rangeContrastMapper.findAllRangeContrast(map);
         seachIndex(allRC);
         return "ok";
+    }
+
+    /**
+     * 清空选中对照
+     *
+     * @param id
+     * @return
+     */
+    public String clearOne(Long id) {
+        int i = rangeContrastMapper.clearOne(id);
+        if (i == 1) {
+            return "ok";
+        } else {
+            return "faile";
+        }
     }
 
     /**
@@ -329,5 +329,21 @@ public class RangeContrastServiceImpl implements IBaseService {
         re.put("total", total);
         re.put("rows", contrastList);
         return gson.toJson(re);
+    }
+
+    public static String escapeQueryChars(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            // These characters are part of the query syntax and must be escaped
+            if (c == '\\' || c == '+' || c == '-' || c == '!' || c == '(' || c == ')' || c == ':'
+                    || c == '^' || c == '[' || c == ']' || c == '\"' || c == '{' || c == '}' || c == '~'
+                    || c == '*' || c == '?' || c == '|' || c == '&' || c == ';' || c == '/'
+                    || Character.isWhitespace(c)) {
+                sb.append('\\');
+            }
+            sb.append(c);
+        }
+        return sb.toString();
     }
 }

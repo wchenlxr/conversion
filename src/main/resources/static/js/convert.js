@@ -4,6 +4,7 @@
 var menuid = undefined;
 var editIndex = undefined;
 var editPPIndex = undefined;
+
 function endEditing() {
     if (editIndex == undefined) {
         return true
@@ -16,6 +17,7 @@ function endEditing() {
         return false;
     }
 }
+
 function endPPEditing() {
     if (editPPIndex == undefined) {
         return true
@@ -52,6 +54,7 @@ function onClickCell(index, field) {
         }
     }
 }
+
 //单元格点击事件
 function onPPClickCell(index, field) {
     if (editPPIndex != index) {
@@ -61,13 +64,13 @@ function onPPClickCell(index, field) {
             if (ed) {
                 ($(ed.target).data('textbox') ? $(ed.target).textbox('textbox') : $(ed.target)).focus();
             }
-            var radio = $("input[type='radio']")[index].disabled;
+            var radio = $("input[name='selected']")[index].disabled;
             //如果当前的单选框不可选，则不让其选中
             if (radio != true) {
                 //让点击的行单选按钮选中
-                $("input[type='radio']")[index].checked = true;
+                $("input[name='selected']")[index].checked = true;
             } else {
-                $("input[type='radio']")[index].checked = false;
+                $("input[name='selected']")[index].checked = false;
             }
             editPPIndex = index;
         } else {
@@ -77,12 +80,13 @@ function onPPClickCell(index, field) {
         }
     }
 }
+
 //新增
 function append() {
     if (endEditing()) {
         var flRow = $('#ptfltype').datagrid('getSelected');
         if (flRow == null || flRow == undefined) {
-            $.messager.alert("提示信息","请先在【系统管理->平台字典】模块添加平台值域分类！");
+            $.messager.alert("提示信息", "请先在【系统管理->平台字典】模块添加平台值域分类！");
             return;
         }
         $('#cszydz').datagrid('appendRow', {
@@ -95,11 +99,12 @@ function append() {
 
     }
 }
+
 //移除
 function removeit() {
     var row = $('#cszydz').datagrid('getSelected');
     if (row == null || row == undefined) {
-        $.messager.alert("提示信息","请先选择一条数据！");
+        $.messager.alert("提示信息", "请先选择一条数据！");
         return;
     }
     $.messager.confirm('操作提示', '确定删除该数据?', function (r) {
@@ -113,6 +118,7 @@ function removeit() {
         }
     });
 }
+
 // 保存操作
 function accept() {
     if (endEditing()) {
@@ -120,10 +126,10 @@ function accept() {
             var inserted = $('#cszydz').datagrid('getChanges', 'inserted');
             var updated = $('#cszydz').datagrid('getChanges', 'updated');
             var deleted = $('#cszydz').datagrid('getChanges', 'deleted');
-            for(var i=0;i<inserted.length;i++){
-                for(var key in inserted[i]){
-                    if(inserted[i]["companyRangeCode"]==""||inserted[i]["companyRangeName"]==""){
-                        $.messager.alert("提示信息","厂商值域编码和名称不能为空，请输入！");
+            for (var i = 0; i < inserted.length; i++) {
+                for (var key in inserted[i]) {
+                    if (inserted[i]["companyRangeCode"] == "" || inserted[i]["companyRangeName"] == "") {
+                        $.messager.alert("提示信息", "厂商值域编码和名称不能为空，请输入！");
                         return;
                     }
                 }
@@ -147,7 +153,13 @@ function accept() {
             success: function (data) {
                 if (data == "ok") {
                     $.messager.alert("操作提示", "保存成功!");
-                    $('#ptfltype').datagrid('load', {});
+                    var ppFlag = $('input[name="ppFlag"]:checked').val();
+                    var row = $('#ptfltype').datagrid('getSelected');
+                    $('#cszydz').datagrid('reload', {
+                        companyCode: menuid,
+                        platformRangeCode: row.platformCode,
+                        ppFlag: ppFlag
+                    });
                 } else {
                     $.messager.alert("操作提示", data);
                 }
@@ -156,20 +168,21 @@ function accept() {
     }
 
 }
+
 // 保存操作
 function acceptPP() {
     debugger;
     var dzRow = $('#cszydz').datagrid('getSelected');
     var ptzyRow = $('#ptzy').datagrid('getSelected');
     var platformDetailCode = undefined;
-  /*  var score = undefined;
-    var id = undefined;
-    var platformDetailName = undefined;*/
+    /*  var score = undefined;
+     var id = undefined;
+     var platformDetailName = undefined;*/
     platformDetailCode = ptzyRow.platformDetailCode
-/*    platformDetailCode = $("input[type='radio']:checked").attr("platformDetailCode");
-    score = $("input[type='radio']:checked").attr("score");
-    id = $("input[type='radio']:checked").attr("tempid");
-    platformDetailName = $("input[type='radio']:checked").attr("platformDetailName");*/
+    /*    platformDetailCode = $("input[type='radio']:checked").attr("platformDetailCode");
+     score = $("input[type='radio']:checked").attr("score");
+     id = $("input[type='radio']:checked").attr("tempid");
+     platformDetailName = $("input[type='radio']:checked").attr("platformDetailName");*/
     if (platformDetailCode == undefined) return;
     var changes = {
         "inserted": undefined,
@@ -198,27 +211,48 @@ function acceptPP() {
         success: function (data) {
             if (data == "ok") {
                 $.messager.alert("操作提示", "保存成功!");
-                $('#cszydz').datagrid('load', {
+                var ppFlag = $('input[name="ppFlag"]:checked').val();
+/*                $('#cszydz').datagrid('reload', {
                     companyCode: menuid,
                     platformRangeCode: dzRow.platformRangeCode,
-                    platformDetailName: ptzyRow.platformDetailName
-                });
+                    platformDetailName: ptzyRow.platformDetailName,
+                    ppFlag: ppFlag
+                });*/
             } else {
                 $.messager.alert("操作提示", data);
             }
         }
     });
 }
+
 // 撤销
 function reject() {
     $('#cszydz').datagrid('rejectChanges');
     editIndex = undefined;
 }
 
-function load() {
-    $("<div class=\"datagrid-mask\"></div>").css({ display: "block", width: "100%", height: $(window).height() }).appendTo("body");
-    $("<div class=\"datagrid-mask-msg\"></div>").html("转码中，请稍候。。。").appendTo("body").css({ display: "block", left: ($(document.body).outerWidth(true) - 190) / 2, top: ($(window).height() - 45) / 2 });
+function filesave() {
+    var url = "/file/contrastDownload";
+    var flRow = $('#ptfltype').datagrid('getSelected');
+    var form = $("<form></form>").attr("action", url).attr("method", "post");
+    form.append($("<input></input>").attr("type", "hidden").attr("name", "platformRangeCode").attr("value", flRow.platformCode));
+    form.append($("<input></input>").attr("type", "hidden").attr("name", "companyCode").attr("value", menuid));
+    form.appendTo('body').submit().remove();
 }
+
+function load() {
+    $("<div class=\"datagrid-mask\"></div>").css({
+        display: "block",
+        width: "100%",
+        height: $(window).height()
+    }).appendTo("body");
+    $("<div class=\"datagrid-mask-msg\"></div>").html("转码中，请稍候。。。").appendTo("body").css({
+        display: "block",
+        left: ($(document.body).outerWidth(true) - 190) / 2,
+        top: ($(window).height() - 45) / 2
+    });
+}
+
 //取消加载层
 function disLoad() {
     $(".datagrid-mask").remove();
@@ -228,14 +262,13 @@ function disLoad() {
 
 //转码
 function transcode() {
-    debugger;
     var flRow = $('#ptfltype').datagrid('getSelected');
     if (flRow == null || flRow == undefined) {
-        $.messager.alert("提示信息","请先在【系统管理->平台字典】模块添加平台值域分类！");
+        $.messager.alert("提示信息", "请先在【系统管理->平台字典】模块添加平台值域分类！");
         return;
     }
     $.ajax({
-        url: 'contrast/transcode?companyCode=' + menuid + '&platformRangeCode=' + flRow.platformCode,
+        url: '/contrast/transcode?companyCode=' + menuid + '&platformRangeCode=' + encodeURIComponent(flRow.platformCode),
         type: 'GET',
         async: true,
         contentType: 'application/json;charset=utf-8',
@@ -252,42 +285,46 @@ function transcode() {
         success: function (data) {
             if (data == "ok") {
                 $.messager.alert("操作提示", "保存成功!");
-                $('#ptfltype').datagrid('load', {});
+                $('#ptfltype').datagrid('load', {status: 1});
             } else {
                 $.messager.alert("操作提示", data);
             }
         }
     });
 }
+
 function doSearch(value, name) {
     $('#ptfltype').datagrid('load', {
         type: name,
-        value: value
+        value: value,
+        status: 1
     });
 }
+
 function mmDoSearch(value, name) {
     var flRow = $('#ptfltype').datagrid('getSelected');
-    var ppFlag  = $('input[name="ppFlag"]:checked').val(); 
+    var ppFlag = $('input[name="ppFlag"]:checked').val();
     $('#cszydz').datagrid('load', {
         companyCode: menuid,
         platformRangeCode: flRow.platformCode,
         type: name,
         value: value,
-        ppFlag:ppFlag
+        ppFlag: ppFlag
     });
 }
-function ppFlagChange(){
-	var flRow = $('#ptfltype').datagrid('getSelected');
-    var ppFlag  = $('input[name="ppFlag"]:checked').val(); 
-    var scVal=$('#sc').val();
-    var name=null;
-    if(scVal!="")name=$('#sc').searchbox('getName');
+
+function ppFlagChange() {
+    var flRow = $('#ptfltype').datagrid('getSelected');
+    var ppFlag = $('input[name="ppFlag"]:checked').val();
+    var scVal = $('#sc').val();
+    var name = null;
+    if (scVal != "") name = $('#sc').searchbox('getName');
     $('#cszydz').datagrid('load', {
         companyCode: menuid,
         platformRangeCode: flRow.platformCode,
         type: name,
         value: scVal,
-        ppFlag:ppFlag
+        ppFlag: ppFlag
     });
 }
 
@@ -309,7 +346,10 @@ $(function () {
         striped: true,
         collapsible: true,
         singleSelect: true,
-        url: 'dictionary/searchRangeClass/',
+        url: 'dictionary/queryRangeClass/',
+        queryParams: {
+            status: 1
+        },
         loadMsg: '数据加载中......',
         fitColumns: true,
         sortName: 'platformCode',
@@ -318,7 +358,11 @@ $(function () {
         toolbar: [{
             iconCls: 'icon-undo',
             handler: function () {
-                transcode();
+                $.messager.confirm('操作提示', '确定删除该数据? 确定后会清空该转码记录重新匹配', function (r) {
+                    if (r) {
+                        transcode();
+                    }
+                });
             },
             text: '转码匹配'
         }],
@@ -328,14 +372,14 @@ $(function () {
             }
         },
         onSelect: function (index, row) {
-        	var ppFlag  = $('input[name="ppFlag"]:checked').val(); 
-        	$('#cszydz').datagrid('loadData',{total:0,rows:[]});
-        	$('#ptzy').datagrid('loadData',{total:0,rows:[]});
+            var ppFlag = $('input[name="ppFlag"]:checked').val();
+            // $('#cszydz').datagrid('loadData',{total:0,rows:[]});
+            $('#ptzy').datagrid('loadData', {total: 0, rows: []});
             $('#cszydz').datagrid('options').url = 'contrast/searchRangeContrast';
             $('#cszydz').datagrid('load', {
                 companyCode: menuid,
                 platformRangeCode: row.platformCode,
-                ppFlag:ppFlag
+                ppFlag: ppFlag
             });
         },
         columns: [[{
@@ -367,7 +411,7 @@ $(function () {
         sortOrder: 'asc',
         remoteSort: false,
         toolbar: [{
-            iconCls: 'icon-add',
+            iconCls: 'icon-add2',
             handler: function () {
                 append();
             },
@@ -390,11 +434,26 @@ $(function () {
                 reject();
             },
             text: '恢复'
+        }, {
+            iconCls: 'icon-save',
+            handler: function () {
+                filesave();
+            },
+            text: 'excel导出'
         }],
         onClickCell: onClickCell,
         onLoadSuccess: function (data) {
-            if (data.rows.length > 0) {
-                $('#cszydz').datagrid("selectRow", 0);
+            /*            if (data.rows.length > 0) {
+                            $('#cszydz').datagrid("selectRow", 0);
+                        }*/
+            /*            for (var i = 0; i < data.rows.length; i++) {
+            /!*                var index = $('#cszydz').datagrid('getRowIndex', rows[i]);
+                            $('#detailTable').datagrid('deleteRow', index);*!/
+                        }*/
+        },
+        rowStyler: function (index, row) {
+            if (row.sdStatus == '1') {
+                return 'background-color:red;';
             }
         },
         onSelect: function (index, row) {
@@ -438,6 +497,10 @@ $(function () {
             field: 'platformDetailName',
             width: 200,
             title: '平台编码名称'
+        }, {
+            field: 'sdStatus',
+            width: 200,
+            title: '手工对照标志'
         }]],
         pagination: true,
         rownumbers: true
@@ -495,9 +558,9 @@ $(function () {
             title: '选中',
             formatter: function (value, row, index) {
                 if (row.selected == 1) {
-                    var s = '<input name="selected" checked type="radio" platformDetailName="'+row.platformDetailName+'" tempid=' + row.id + ' score=' + row.score + '  platformDetailCode=' + row.platformDetailCode + '></input>';
+                    var s = '<input name="selected" checked type="radio" platformDetailName="' + row.platformDetailName + '" tempid=' + row.id + ' score=' + row.score + '  platformDetailCode=' + row.platformDetailCode + '></input>';
                 } else {
-                    var s = '<input name="selected" type="radio" platformDetailName=""'+row.platformDetailName+'" tempid=' + row.id + ' score=' + row.score + '  platformDetailCode=' + row.platformDetailCode + '></input>';
+                    var s = '<input name="selected" type="radio" platformDetailName=""' + row.platformDetailName + '" tempid=' + row.id + ' score=' + row.score + '  platformDetailCode=' + row.platformDetailCode + '></input>';
                 }
                 return s;
             }

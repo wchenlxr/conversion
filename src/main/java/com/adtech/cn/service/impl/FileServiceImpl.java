@@ -4,7 +4,6 @@ import com.adtech.cn.domain.Company;
 import com.adtech.cn.domain.RangeClass;
 import com.adtech.cn.domain.RangeContrast;
 import com.adtech.cn.domain.RangeDetail;
-import com.adtech.cn.dto.UpdateRangeDetailDTO;
 import com.adtech.cn.exception.ApplicationException;
 import com.adtech.cn.exception.SystemError;
 import com.adtech.cn.mapper.CompanyMapper;
@@ -12,19 +11,23 @@ import com.adtech.cn.mapper.RangeClassMapper;
 import com.adtech.cn.mapper.RangeContrastMapper;
 import com.adtech.cn.mapper.RangeDetailMapper;
 import com.adtech.cn.service.IBaseService;
+import com.adtech.cn.service.support.DeleteIndexTask;
 import com.adtech.cn.utils.IdWorker;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.lucene.index.IndexWriter;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
@@ -49,6 +52,8 @@ public class FileServiceImpl implements IBaseService {
     private IdWorker idWorker;
     @Autowired
     private DictionaryServiceImpl dictionaryService;
+    @Autowired
+    private IndexWriter indexWriter;
 
     /**
      * 值域导入并入库(包括平台值域分类，平台分类值域，接入业务厂商值域)
@@ -57,7 +62,7 @@ public class FileServiceImpl implements IBaseService {
      * @param code
      * @return
      */
-    public String excelUpload(MultipartFile file, String code) {
+    public String templateUpload(MultipartFile file, String code) {
         //平台分类代码
         Map<String, String> ptfldm = new HashMap<>();
         //平台分类值域
@@ -69,10 +74,24 @@ public class FileServiceImpl implements IBaseService {
 //        System.out.println(file.getOriginalFilename() + " code=" + code);
         try {
             InputStream inputStream = file.getInputStream();
-            HSSFWorkbook hssfWorkbook = new HSSFWorkbook(inputStream);
-            Iterator workBookIterator = hssfWorkbook.sheetIterator();
+            Workbook workbook = null;
+            try {
+                //2003
+                workbook = new HSSFWorkbook(inputStream);
+            } catch (Exception e) {
+                try {
+                    //2007
+                    workbook = new XSSFWorkbook(file.getInputStream());
+                } catch (Exception e1) {
+                    SystemError error = SystemError.SYSTEM_ERROR;
+                    error.setText(e1.getMessage());
+                    throw new ApplicationException(error);
+                }
+            }
+
+            Iterator workBookIterator = workbook.sheetIterator();
             while (workBookIterator.hasNext()) {
-                HSSFSheet sheet = (HSSFSheet) workBookIterator.next();
+                Sheet sheet =  (Sheet) workBookIterator.next();
                 String sheetName = sheet.getSheetName().trim();
                 //模版使用说明　跳过
                 if (StringUtils.equals(sheetName, "模版使用说明")) continue;
@@ -81,12 +100,12 @@ public class FileServiceImpl implements IBaseService {
                 map = new HashMap<>();
                 int i = 1;
                 while (rowIterator.hasNext()) {
-                    HSSFRow row = (HSSFRow) rowIterator.next();
+                    Row row = (Row) rowIterator.next();
                     Iterator cellIterator = row.cellIterator();
                     String valueCell2 = null;
                     int j = 1;//第一列
                     while (cellIterator.hasNext()) {
-                        HSSFCell titleCell = (HSSFCell) cellIterator.next();
+                        Cell titleCell = (Cell) cellIterator.next();
                         String cellName = titleCell.getStringCellValue().trim();
                         String value = null;
                         titleCell.setCellType(CellType.STRING);
@@ -123,7 +142,7 @@ public class FileServiceImpl implements IBaseService {
                 if (StringUtils.equals(sheetName, "平台分类代码")) {
                     ptfldm.putAll(map);
                 }
-                String[] sheetNames = StringUtils.split(sheetName, "-");
+                String[] sheetNames = StringUtils.split(sheetName, "-", 2);
                 if (sheetNames.length == 2) {
                     if (StringUtils.equals(sheetNames[0], "平台分类值域")) {
                         ptflzy.put(sheetNames[1], map);
@@ -162,20 +181,34 @@ public class FileServiceImpl implements IBaseService {
                 }
             }
         }
-        //平台分类值域
+        //平台分类值域 平台分类编码不存在时不导入明细 先删除平台原有值域明细
         if (MapUtils.isNotEmpty(ptflzy)) {
             Set<String> ptflbmSet = ptflzy.keySet();
-            Map<String, String> map1 = new HashMap<>();
+            Map<String, Object> map1 = new HashMap<>();
             for (String ptflbm : ptflbmSet) {
                 Map<String, String> detailMap = ptflzy.get(ptflbm);
                 Set<String> detailKey = detailMap.keySet();
+                RangeClass rangeClass = rangeClassMapper.selectByCode(ptflbm);
+                if (rangeClass == null) continue;
+                rangeClass.setUpdateTime(new Date());
+                rangeClass.setId(rangeClass.getId());
+                rangeClassMapper.updateByPrimaryKeySelective(rangeClass);
+                //删除原索引
+                map1.put("platformCode", ptflbm);
+                List<RangeDetail> rangeDetails = rangeDetailMapper.findAllDetail(map1);
+                List<String> ids = new ArrayList<>();
+                for (RangeDetail detail : rangeDetails) {
+                    ids.add(detail.getId() + "");
+                }
+                if (CollectionUtils.isNotEmpty(ids))
+                    new DeleteIndexTask(indexWriter, ids.toArray(new String[]{}));
+                //删除原有值域
+                rangeDetailMapper.deleteByCode(ptflbm);
                 for (String detailCode : detailKey) {
                     if (StringUtils.isEmpty(detailCode.trim())) continue;
-                    map1.put("platformCode", ptflbm);
-                    map1.put("detailCode", detailCode);
-                    RangeDetail rangeDetailExisted = rangeDetailMapper.selectByCode(map1);
-                    if (rangeDetailExisted != null && StringUtils.equals(rangeDetailExisted.getDetailName().trim(), detailMap.get(detailCode).trim()))
-                        continue;
+/*                 RangeDetail rangeDetailExisted = rangeDetailMapper.selectByCode(map1);
+                   if (rangeDetailExisted != null && StringUtils.equals(rangeDetailExisted.getDetailName().trim(), detailMap.get(detailCode).trim()))
+                        continue;*/
                     RangeDetail rangeDetail = new RangeDetail();
                     rangeDetail.setPlatformCode(ptflbm);
                     rangeDetail.setDetailCode(detailCode);
@@ -191,22 +224,21 @@ public class FileServiceImpl implements IBaseService {
         if (MapUtils.isNotEmpty(ywzy)) {
             Set<String> sheetNameSet = ywzy.keySet();
             for (String sheetName : sheetNameSet) {
-                String[] names = StringUtils.split(sheetName, "-");
+                String[] names = StringUtils.split(sheetName, "-", 2);
                 List<Company> companyList = companyMapper.selectByName(names[0]);
-                if (companyList == null) {
-                    log.error("{}不存在,请检查导入excel中sheet名是否为系统中业务厂商名-值域代码", names[0]);
-                    continue;
+                if (CollectionUtils.isEmpty(companyList)) {
+                    log.error("{}不存在,请检查系统中业务厂商名与导入文件是否匹配", names[0]);
+                    SystemError error = SystemError.EXCEL_ERROR;
+                    error.setText(names[0] + "不存在,请检查系统中业务厂商名与导入文件是否匹配");
+                    throw new ApplicationException(error);
                 }
                 if (companyList.size() > 1) {
                     log.error("{}业务厂商名不能重复,无法确定导入唯一性,请在系统中进行区分", names[0]);
-                    continue;
+                    SystemError error = SystemError.EXCEL_ERROR;
+                    error.setText(names[0] + "业务厂商名不能重复,无法确定导入唯一性,请在系统中进行区分");
+                    throw new ApplicationException(error);
                 }
                 Company company = companyList.get(0);
-/*                RangeClass rangeClass = rangeClassMapper.selectByCode(ptflbm);
-                if (rangeClass == null) {
-                    log.error("{}平台值域分类不存在,请先完善该平台值域分类信息", ptflbm);
-                    continue;
-                }*/
                 Map<String, String> map1 = new HashMap<>();
                 map1.put("companyCode", company.getCompanyCode() + "");
                 map1.put("platformRangeCode", names[1]);
@@ -230,5 +262,47 @@ public class FileServiceImpl implements IBaseService {
             }
         }
         return "{\"success\" :\"1\"}";
+    }
+
+
+    public ByteArrayOutputStream contrastDownload(String platformRangeCode, String companyCode) {
+        Map<String, String> map = new HashMap<>();
+        map.put("companyCode", companyCode);
+        map.put("platformRangeCode", platformRangeCode);
+        List<RangeContrast> allRC = rangeContrastMapper.findAllRangeContrast(map);
+        try {
+            Workbook workbook = new HSSFWorkbook();
+            Sheet sheet = workbook.createSheet(platformRangeCode);
+            //创建行
+            Row row = sheet.createRow(0);
+            //创建单元格
+            row.createCell(0).setCellValue("厂商值编码");
+            row.createCell(1).setCellValue("厂商值名称");
+            row.createCell(2).setCellValue("平台值编码");
+            row.createCell(3).setCellValue("平台值名称");
+            row.createCell(4).setCellValue("相等");
+            row.createCell(5).setCellValue("手工对照标志,1手工");
+            for (int i = 0; i < allRC.size(); i++) {
+                row = sheet.createRow(i + 1);
+                row.createCell(0).setCellValue(allRC.get(i).getCompanyRangeCode());
+                row.createCell(1).setCellValue(allRC.get(i).getCompanyRangeName());
+                row.createCell(2).setCellValue(allRC.get(i).getPlatformDetailCode());
+                row.createCell(3).setCellValue(allRC.get(i).getPlatformDetailName());
+                row.createCell(4).setCellValue(StringUtils.equals(allRC.get(i).getPlatformDetailName(), allRC.get(i).getCompanyRangeName()) ? "1" : "0");
+                row.createCell(5).setCellValue(allRC.get(i).getSdStatus());
+            }
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+            try {
+                workbook.write(outputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return outputStream;
+        } catch (Exception e) {
+            e.printStackTrace();
+            SystemError error = SystemError.SYSTEM_ERROR;
+            error.setText("excel创建模块出错");
+            throw new ApplicationException(error);
+        }
     }
 }

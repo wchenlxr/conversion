@@ -29,15 +29,10 @@ public class DictionaryController {
      */
     @RequestMapping(value = "/queryRangeClass")
     public String queryRangeClass(@RequestParam int page, @RequestParam int rows, @RequestParam(value = "type", required = false) Integer type,
-                                  @RequestParam(value = "value", required = false) String value) {
-        String re = null;
-        if (type == null) {
-            re = dictionaryService.findRangeClass(page, rows);
-        } else {
-            re = dictionaryService.searchRangeClass(page, rows, type, value);
-        }
-        return re;
+                                  @RequestParam(value = "value", required = false) String value, @RequestParam(value = "status", required = false) Integer status) {
+        return dictionaryService.searchRangeClass(page, rows, type, value, status);
     }
+
 
     /**
      * 平台值域分类明细查询
@@ -50,8 +45,7 @@ public class DictionaryController {
     @RequestMapping(value = "/queryRangeDetail")
     public String queryRangeDetail(@RequestParam int page, @RequestParam int rows,
                                    @RequestParam(value = "platformCode", required = false) String platformCode) {
-        String re = dictionaryService.findRangeDetail(page, rows, platformCode);
-        return re;
+        return dictionaryService.findRangeDetail(page, rows, platformCode);
     }
 
     /**
@@ -83,27 +77,7 @@ public class DictionaryController {
      */
     @RequestMapping(value = "/queryClassList")
     public String queryClassList() {
-        String re = dictionaryService.findClassList();
-        return re;
+        return dictionaryService.findClassList();
     }
 
-    /**
-     * 平台值域分类查询
-     *
-     * @param page
-     * @param rows
-     * @return
-     */
-    @RequestMapping("/searchRangeClass")
-    public String searchRangeClass(@RequestParam Integer page, @RequestParam Integer rows,
-                                   @RequestParam(value = "type", required = false) Integer type,
-                                   @RequestParam(value = "value", required = false) String value) {
-        String re = null;
-        if (type == null) {
-            re = dictionaryService.findRangeClass(page, rows);
-        } else {
-            re = dictionaryService.searchRangeClass(page, rows, type, value);
-        }
-        return re;
-    }
 }

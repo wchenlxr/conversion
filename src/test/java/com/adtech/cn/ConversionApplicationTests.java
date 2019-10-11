@@ -3,6 +3,7 @@ package com.adtech.cn;
 import com.adtech.cn.domain.Company;
 import com.adtech.cn.mapper.CompanyMapper;
 import com.adtech.cn.service.impl.CompanyServiceImpl;
+import org.apache.commons.lang3.StringUtils;
 import org.easymock.EasyMock;
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,6 +31,7 @@ public class ConversionApplicationTests {
 
     @Test
     public void testCompany() {
+
         String[] name = {"中迪", "云信", "万达", "东软", "亚德", "曼荼罗", "银海", "中联"};
         List<Company> companies = new ArrayList<>();
         for (int i = 0; i < 8; i++) {
