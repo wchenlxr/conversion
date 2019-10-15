@@ -212,12 +212,12 @@ function acceptPP() {
             if (data == "ok") {
                 $.messager.alert("操作提示", "保存成功!");
                 var ppFlag = $('input[name="ppFlag"]:checked').val();
-/*                $('#cszydz').datagrid('reload', {
-                    companyCode: menuid,
-                    platformRangeCode: dzRow.platformRangeCode,
-                    platformDetailName: ptzyRow.platformDetailName,
-                    ppFlag: ppFlag
-                });*/
+                /*                $('#cszydz').datagrid('reload', {
+                                    companyCode: menuid,
+                                    platformRangeCode: dzRow.platformRangeCode,
+                                    platformDetailName: ptzyRow.platformDetailName,
+                                    ppFlag: ppFlag
+                                });*/
             } else {
                 $.messager.alert("操作提示", data);
             }
@@ -263,6 +263,7 @@ function disLoad() {
 //转码
 function transcode() {
     var flRow = $('#ptfltype').datagrid('getSelected');
+    var rowindex = $('#ptfltype').datagrid('getRowIndex', flRow);
     if (flRow == null || flRow == undefined) {
         $.messager.alert("提示信息", "请先在【系统管理->平台字典】模块添加平台值域分类！");
         return;
@@ -285,7 +286,9 @@ function transcode() {
         success: function (data) {
             if (data == "ok") {
                 $.messager.alert("操作提示", "保存成功!");
-                $('#ptfltype').datagrid('load', {status: 1});
+                // $('#ptfltype').datagrid('reload');
+                $('#ptfltype').datagrid("scrollTo", rowindex);
+                $('#ptfltype').datagrid("selectRow", rowindex);
             } else {
                 $.messager.alert("操作提示", data);
             }
