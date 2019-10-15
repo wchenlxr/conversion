@@ -91,7 +91,7 @@ public class FileServiceImpl implements IBaseService {
 
             Iterator workBookIterator = workbook.sheetIterator();
             while (workBookIterator.hasNext()) {
-                Sheet sheet =  (Sheet) workBookIterator.next();
+                Sheet sheet = (Sheet) workBookIterator.next();
                 String sheetName = sheet.getSheetName().trim();
                 //模版使用说明　跳过
                 if (StringUtils.equals(sheetName, "模版使用说明")) continue;
@@ -106,6 +106,7 @@ public class FileServiceImpl implements IBaseService {
                     int j = 1;//第一列
                     while (cellIterator.hasNext()) {
                         Cell titleCell = (Cell) cellIterator.next();
+                        titleCell.setCellType(CellType.STRING);
                         String cellName = titleCell.getStringCellValue().trim();
                         String value = null;
                         titleCell.setCellType(CellType.STRING);

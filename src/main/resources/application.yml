@@ -14,7 +14,6 @@ spring:
     name: conversion
   profiles:
     active: dev
-
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   configuration:
